@@ -35,6 +35,90 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		015861D41B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1DC7B7C01A8FFF5300B14C5C62878A29;
+			remoteInfo = AFNetworking;
+		};
+		015861D61B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13B5089F889E5910697109A1353DF2E8;
+			remoteInfo = BlocksKit;
+		};
+		015861D81B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C7FA26675C4CADC1DBA5AA357B32069;
+			remoteInfo = FXKeychain;
+		};
+		015861DA1B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ACA096F8BF0E738E96AD27E2869D0004;
+			remoteInfo = FrameAccessor;
+		};
+		015861DC1B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 60B0DDC267AE0BC8068018C7C26D2F95;
+			remoteInfo = MBProgressHUD;
+		};
+		015861DE1B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 082B8FC20DC52B48B9DA429410D6A5B1;
+			remoteInfo = MJRefresh;
+		};
+		015861E01B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC60DC6CB7AD2783737FC643B98754AA;
+			remoteInfo = MWFeedParser;
+		};
+		015861E21B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AAF0879E9DF7182F06D60B7D9B71D2D9;
+			remoteInfo = "NSString-Hashes";
+		};
+		015861E41B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D153A38C8E13D3948A0A481FC29A49B;
+			remoteInfo = NYXImagesKit;
+		};
+		015861E61B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 47215689FA528A14DCD60B2C402D03C0;
+			remoteInfo = Pods;
+		};
+		015861E81B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35C69A7BF42DE3E072C96DD79D97B478;
+			remoteInfo = RegexKitLite;
+		};
+		015861EA1B70CC4500445DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A4E3C75131DB73B535BA7338F6201845;
+			remoteInfo = SDWebImage;
+		};
 		16E450CF1B6592BD00EC2EBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 16E450AA1B6592BD00EC2EBB /* Project object */;
@@ -49,6 +133,7 @@
 		015861C01B70A18400445DF9 /* NSDictionary+NotNullKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NotNullKey.m"; sourceTree = "<group>"; };
 		015861C11B70A18400445DF9 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
 		015861C21B70A18400445DF9 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		015861C51B70CC4500445DF9 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		01C952021B6F38D900318241 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = ../Post.h; sourceTree = "<group>"; };
 		01C952031B6F38D900318241 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = ../Post.m; sourceTree = "<group>"; };
 		01C952051B6F38D900318241 /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Users.h; path = ../Users.h; sourceTree = "<group>"; };
@@ -130,6 +215,25 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		015861C61B70CC4500445DF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				015861D51B70CC4500445DF9 /* libAFNetworking.a */,
+				015861D71B70CC4500445DF9 /* libBlocksKit.a */,
+				015861D91B70CC4500445DF9 /* libFXKeychain.a */,
+				015861DB1B70CC4500445DF9 /* libFrameAccessor.a */,
+				015861DD1B70CC4500445DF9 /* libMBProgressHUD.a */,
+				015861DF1B70CC4500445DF9 /* libMJRefresh.a */,
+				015861E11B70CC4500445DF9 /* libMWFeedParser.a */,
+				015861E31B70CC4500445DF9 /* libNSString-Hashes.a */,
+				015861E51B70CC4500445DF9 /* libNYXImagesKit.a */,
+				015861E71B70CC4500445DF9 /* libPods.a */,
+				015861E91B70CC4500445DF9 /* libRegexKitLite.a */,
+				015861EB1B70CC4500445DF9 /* libSDWebImage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		01C952011B6F35D600318241 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +297,7 @@
 		16E450A91B6592BD00EC2EBB = {
 			isa = PBXGroup;
 			children = (
+				015861C51B70CC4500445DF9 /* Pods.xcodeproj */,
 				16E450E31B659DBA00EC2EBB /* CoreData.framework */,
 				16E450B41B6592BD00EC2EBB /* swiftmi_oc */,
 				16E450D11B6592BD00EC2EBB /* swiftmi_ocTests */,
@@ -374,6 +479,12 @@
 			mainGroup = 16E450A91B6592BD00EC2EBB;
 			productRefGroup = 16E450B31B6592BD00EC2EBB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 015861C61B70CC4500445DF9 /* Products */;
+					ProjectRef = 015861C51B70CC4500445DF9 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				16E450B11B6592BD00EC2EBB /* swiftmi_oc */,
@@ -381,6 +492,93 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		015861D51B70CC4500445DF9 /* libAFNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAFNetworking.a;
+			remoteRef = 015861D41B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861D71B70CC4500445DF9 /* libBlocksKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBlocksKit.a;
+			remoteRef = 015861D61B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861D91B70CC4500445DF9 /* libFXKeychain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFXKeychain.a;
+			remoteRef = 015861D81B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861DB1B70CC4500445DF9 /* libFrameAccessor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFrameAccessor.a;
+			remoteRef = 015861DA1B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861DD1B70CC4500445DF9 /* libMBProgressHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMBProgressHUD.a;
+			remoteRef = 015861DC1B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861DF1B70CC4500445DF9 /* libMJRefresh.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMJRefresh.a;
+			remoteRef = 015861DE1B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861E11B70CC4500445DF9 /* libMWFeedParser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMWFeedParser.a;
+			remoteRef = 015861E01B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861E31B70CC4500445DF9 /* libNSString-Hashes.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libNSString-Hashes.a";
+			remoteRef = 015861E21B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861E51B70CC4500445DF9 /* libNYXImagesKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNYXImagesKit.a;
+			remoteRef = 015861E41B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861E71B70CC4500445DF9 /* libPods.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPods.a;
+			remoteRef = 015861E61B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861E91B70CC4500445DF9 /* libRegexKitLite.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRegexKitLite.a;
+			remoteRef = 015861E81B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		015861EB1B70CC4500445DF9 /* libSDWebImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImage.a;
+			remoteRef = 015861EA1B70CC4500445DF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		16E450B01B6592BD00EC2EBB /* Resources */ = {
