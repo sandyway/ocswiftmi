@@ -16,6 +16,7 @@
 		01CA610B1B6B474E0099BBDB /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA610A1B6B474E0099BBDB /* DataManager.m */; };
 		01CA610E1B6B49EE0099BBDB /* SettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA610D1B6B49EE0099BBDB /* SettingManager.m */; };
 		01CA613A1B6B5A2E0099BBDB /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA61381B6B5A2E0099BBDB /* EXTScope.m */; };
+		01CC5A781B72306700A8C5E4 /* AppNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC5A771B72306700A8C5E4 /* AppNotice.m */; };
 		01CC9C051B6A56A30002378D /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC9C041B6A56A30002378D /* PostCell.m */; };
 		01D244DD1B65DB73000CA13C /* PostDal.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D244DC1B65DB73000CA13C /* PostDal.m */; };
 		01D5083C1B665C1B00A48E7D /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5083B1B665C1B00A48E7D /* CoreDataManager.m */; };
@@ -149,6 +150,8 @@
 		01CA61371B6B5A2E0099BBDB /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		01CA61381B6B5A2E0099BBDB /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
 		01CA61391B6B5A2E0099BBDB /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		01CC5A761B72306700A8C5E4 /* AppNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNotice.h; sourceTree = "<group>"; };
+		01CC5A771B72306700A8C5E4 /* AppNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNotice.m; sourceTree = "<group>"; };
 		01CC9C031B6A56A30002378D /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
 		01CC9C041B6A56A30002378D /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 		01D244DB1B65DB73000CA13C /* PostDal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostDal.h; sourceTree = "<group>"; };
@@ -251,6 +254,8 @@
 			children = (
 				01CA61051B6AFF430099BBDB /* Utility.h */,
 				01CA61061B6AFF430099BBDB /* Utility.m */,
+				01CC5A761B72306700A8C5E4 /* AppNotice.h */,
+				01CC5A771B72306700A8C5E4 /* AppNotice.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -655,6 +660,7 @@
 				01C952041B6F38D900318241 /* Post.m in Sources */,
 				01CA613A1B6B5A2E0099BBDB /* EXTScope.m in Sources */,
 				01D5083F1B665DF700A48E7D /* Constant.m in Sources */,
+				01CC5A781B72306700A8C5E4 /* AppNotice.m in Sources */,
 				01D244DD1B65DB73000CA13C /* PostDal.m in Sources */,
 				01CC9C051B6A56A30002378D /* PostCell.m in Sources */,
 			);
