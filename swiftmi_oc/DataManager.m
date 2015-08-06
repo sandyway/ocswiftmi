@@ -71,7 +71,7 @@
         
         // Any common handler for Response
         
-        //        NSLog(@"URL:\n%@", [task.currentRequest URL].absoluteString);
+        NSLog(@"URL:\n%@", [task.currentRequest URL].absoluteString);
         
         
         success(task, responseObject);
