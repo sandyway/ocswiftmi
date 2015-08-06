@@ -22,3 +22,10 @@ typedef NS_ENUM(NSInteger, NoticeType) {
 +(void)showNoticeWithText:(NoticeType)type text:(NSString*)text autoClear:(BOOL)autoClear;
 
 @end
+
+@interface NoticeSDK : NSObject 
++(void)draw:(NoticeType)type;
++(UIImage*)imageOfCheckmark;
++(UIImage*)imageOfCross;
++(UIImage*)imageOfInfo;
+@end

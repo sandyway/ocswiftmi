@@ -19,6 +19,7 @@
 		01CC5A781B72306700A8C5E4 /* AppNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC5A771B72306700A8C5E4 /* AppNotice.m */; };
 		01CC9C051B6A56A30002378D /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC9C041B6A56A30002378D /* PostCell.m */; };
 		01D244DD1B65DB73000CA13C /* PostDal.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D244DC1B65DB73000CA13C /* PostDal.m */; };
+		01D4D8721B73752E00CFF883 /* UserDal.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D4D8711B73752E00CFF883 /* UserDal.m */; };
 		01D5083C1B665C1B00A48E7D /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5083B1B665C1B00A48E7D /* CoreDataManager.m */; };
 		01D5083F1B665DF700A48E7D /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5083E1B665DF700A48E7D /* Constant.m */; };
 		16E450B81B6592BD00EC2EBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E450B71B6592BD00EC2EBB /* main.m */; };
@@ -156,6 +157,8 @@
 		01CC9C041B6A56A30002378D /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 		01D244DB1B65DB73000CA13C /* PostDal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostDal.h; sourceTree = "<group>"; };
 		01D244DC1B65DB73000CA13C /* PostDal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostDal.m; sourceTree = "<group>"; };
+		01D4D8701B73752E00CFF883 /* UserDal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDal.h; sourceTree = "<group>"; };
+		01D4D8711B73752E00CFF883 /* UserDal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDal.m; sourceTree = "<group>"; };
 		01D507D01B65F25F00A48E7D /* swiftmi_oc-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "swiftmi_oc-Prefix.pch"; sourceTree = "<group>"; };
 		01D508241B66082100A48E7D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		01D508261B6609F900A48E7D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -392,6 +395,8 @@
 				01D244DC1B65DB73000CA13C /* PostDal.m */,
 				01D5083A1B665C1B00A48E7D /* CoreDataManager.h */,
 				01D5083B1B665C1B00A48E7D /* CoreDataManager.m */,
+				01D4D8701B73752E00CFF883 /* UserDal.h */,
+				01D4D8711B73752E00CFF883 /* UserDal.m */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -653,6 +658,7 @@
 				01D5083C1B665C1B00A48E7D /* CoreDataManager.m in Sources */,
 				015861C41B70A18400445DF9 /* UIImage+Tint.m in Sources */,
 				16E450BE1B6592BD00EC2EBB /* FirstViewController.m in Sources */,
+				01D4D8721B73752E00CFF883 /* UserDal.m in Sources */,
 				16E450E11B65980E00EC2EBB /* PostTableViewController.m in Sources */,
 				16E450B81B6592BD00EC2EBB /* main.m in Sources */,
 				16E450E81B659E6400EC2EBB /* Model.xcdatamodeld in Sources */,

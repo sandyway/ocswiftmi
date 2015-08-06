@@ -20,11 +20,15 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
 
 + (instancetype)manager;
 
+@property (nonatomic, copy) NSString* token;
 @property (nonatomic, assign) BOOL preferHttps;
 
 - (NSURLSessionDataTask *)getTopicList:(int)maxId count:(int)count
                                          success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                                failure:(void (^)(NSError *error))failure;
 
+- (NSURLSessionDataTask *)UserLogin:(NSDictionary *)parameters
+                               success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                               failure:(void (^)(NSError *error))failure;
 
 @end

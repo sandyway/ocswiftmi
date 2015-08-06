@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>925D2196-1C1C-41EC-8BE3-3DB974BE9F70</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>swiftmi_oc</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8CE974DA6FBD2D896CED7ED75A19EAC61E199BEC</key>
 		<string>https://github.com/sandyway/ocmi.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>swiftmi_oc.xcodeproj/project.xcworkspace</string>
+	<string>swiftmi_oc.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8CE974DA6FBD2D896CED7ED75A19EAC61E199BEC</key>

@@ -11,8 +11,6 @@
 #import "FXKeychain.h"
 
 @interface DataManager ()
-
-@property (nonatomic, copy) NSString* token;
 @property (nonatomic, strong) AFHTTPSessionManager *manager;
 @property (nonatomic, copy) NSString *userAgentMobile;
 @property (nonatomic, copy) NSString *userAgentPC;
@@ -41,7 +39,7 @@
     if (preferHttps) {
         baseUrl = [NSURL URLWithString:@"https://demo.swiftmi.com"];
     } else {
-        baseUrl = [NSURL URLWithString:@"http://demo.swiftmi.com"];
+        baseUrl = [NSURL URLWithString:@"http://www.swiftmi.com"];
     }
     
     self.manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseUrl];
@@ -88,7 +86,7 @@
     if (self.token != nil) {
         [self.manager.requestSerializer setValue:self.token forHTTPHeaderField:@"token"];
     }
-    [self.manager.requestSerializer setValue:@"com.swiftmi.demo" forHTTPHeaderField:@"clientid"];
+    [self.manager.requestSerializer setValue:@"com.swiftmi.www" forHTTPHeaderField:@"clientid"];
     [self.manager.requestSerializer setValue:@"1.0" forHTTPHeaderField:@"appversion"];
     
     if (method == RequestMethodJSONGET) {
@@ -144,6 +142,12 @@
     return [self requestWithMethod:RequestMethodJSONGET URLString:url parameters:nil success:success failure:failure];    
 }
 
+- (NSURLSessionDataTask *)UserLogin:(NSDictionary *)parameters
+                            success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                            failure:(void (^)(NSError *error))failure{
+    NSString* url = @"/api/user/login";
+    return [self requestWithMethod:RequestMethodHTTPPOST URLString:url parameters:parameters success:success failure:failure];
+}
 
 
 @end

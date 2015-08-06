@@ -7,6 +7,9 @@
 //
 
 #import "LoginController.h"
+#import "AppNotice.h"
+#import "FXKeychain.h"
+#import "UserDal.h"
 
 @interface LoginController ()
 @property (nonatomic, strong)UIActivityIndicatorView* loadingView;
@@ -30,6 +33,13 @@
     [alert show];
 }
 
+-(void)recoverLoginState{
+    [AppNotice clear];
+    
+    self.loginBtn.enabled  = true;
+    [self.loginBtn setTitle:@"登录" forState:UIControlStateNormal];
+}
+
 -(void)login{
     if (_username.text.length == 0) {
         [self showMsg:@"用户名不能为空"];
@@ -45,12 +55,36 @@
     
     NSDictionary* params = @{@"username":loginname, @"password":loginpass};
     
-    [self pleaseWait];
+    [AppNotice wait];
     
     self.loginBtn.enabled = false;
     [self.loginBtn setTitle:@"登录ing" forState:UIControlStateNormal];
-    
-    
+
+    [[DataManager manager] UserLogin:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        [self recoverLoginState];
+        NSDictionary* result = (NSDictionary*)responseObject;
+        if ([[result objectForSafeKey:@"isSuc"] boolValue]) {
+            id user = [result objectForSafeKey:@"result"];
+            
+            NSString* token = [user objectForSafeKey:@"token"];
+            
+            [[FXKeychain defaultKeychain] setObject:token forKey:@"token"];
+            [DataManager manager].token = token;
+            
+            UserDal* dalUser = [[UserDal alloc] init];
+            [dalUser deleteAll];
+            Users* currentUser = [dalUser addUser:user save:TRUE];
+            [self goToBackView:currentUser];
+        }
+    } failure:^(NSError *error) {
+        [self recoverLoginState];
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"网络异常" message:@"请检查网络设置" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert show];
+    }];
+}
+
+-(void) goToBackView:(Users*)user{
+    [self.navigationController popViewControllerAnimated:TRUE];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,10 +93,13 @@
 }
 
 - (IBAction)userLogin:(UIButton *)sender {
+    [self login];
 }
 
 
 - (IBAction)regAction:(id)sender {
+//    RegisterController* toViewController = (RegisterController*)[Utility GetViewController:@"registerController"];
+//    [self.navigationController pushViewController:toViewController animated:TRUE];
 }
 
 /*
