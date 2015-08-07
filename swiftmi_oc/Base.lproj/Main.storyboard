@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -166,6 +166,56 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
+        <!--Post Detail Controller-->
+        <scene sceneID="pF2-Ya-UgI">
+            <objects>
+                <viewController id="LsA-Wn-dnJ" userLabel="Post Detail Controller" customClass="PostDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sTU-VJ-hAT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ixC-Bb-7LQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ByG-jV-ENN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NmX-ey-u4P">
+                                <rect key="frame" x="0.0" y="64" width="600" height="486"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3F9-fZ-iqJ">
+                                <rect key="frame" x="0.0" y="501" width="600" height="50"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEy-h0-w9L">
+                                        <rect key="frame" x="8" y="2" width="520" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAN-3a-h7Q">
+                                        <rect key="frame" x="548" y="2" width="30" height="46"/>
+                                        <state key="normal" title="回复">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="FYf-7r-dGq" userLabel="Navigation item">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Bkd-K5-LbJ" userLabel="Action"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="inputReply" destination="wEy-h0-w9L" id="uCD-Ms-O9K"/>
+                        <outlet property="view" destination="3F9-fZ-iqJ" id="Og0-Ev-zlX"/>
+                        <outlet property="webView" destination="NmX-ey-u4P" id="cHy-F0-eQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MtV-OJ-mnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2237" y="-96"/>
+        </scene>
         <!--社区-->
         <scene sceneID="Cge-ew-vAt">
             <objects>
@@ -262,6 +312,7 @@
                                     <outlet property="containerView" destination="fMX-zz-eyV" id="1Jw-oe-CZV"/>
                                     <outlet property="timeLabel" destination="vFL-8Y-P8Y" id="rnL-r2-ETo"/>
                                     <outlet property="title" destination="qiA-ZT-Knm" id="e5P-yy-1aa"/>
+                                    <segue destination="LsA-Wn-dnJ" kind="show" identifier="PostDetail" id="nHC-Ic-Vsq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

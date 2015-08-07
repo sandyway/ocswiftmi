@@ -33,6 +33,9 @@
 		16E450E11B65980E00EC2EBB /* PostTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E450E01B65980E00EC2EBB /* PostTableViewController.m */; };
 		16E450E41B659DBA00EC2EBB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E450E31B659DBA00EC2EBB /* CoreData.framework */; };
 		16E450E81B659E6400EC2EBB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16E450E61B659E6400EC2EBB /* Model.xcdatamodeld */; };
+		A0824E931B749B28005BB05C /* PostDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0824E921B749B28005BB05C /* PostDetailController.m */; };
+		A0824EA21B74A4C7005BB05C /* ServiceApi.m in Sources */ = {isa = PBXBuildFile; fileRef = A0824EA11B74A4C7005BB05C /* ServiceApi.m */; };
+		A0824EAC1B74B748005BB05C /* article.html in Resources */ = {isa = PBXBuildFile; fileRef = A0824EAB1B74B748005BB05C /* article.html */; };
 		C0AB0401A3A4C2562E229A92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E5B354896DCF5647964E31 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -187,6 +190,11 @@
 		16E450E71B659E6400EC2EBB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		61E5B354896DCF5647964E31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DD6F86B646A8893FC815AA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A0824E911B749B28005BB05C /* PostDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostDetailController.h; sourceTree = "<group>"; };
+		A0824E921B749B28005BB05C /* PostDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostDetailController.m; sourceTree = "<group>"; };
+		A0824EA01B74A4C7005BB05C /* ServiceApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceApi.h; sourceTree = "<group>"; };
+		A0824EA11B74A4C7005BB05C /* ServiceApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceApi.m; sourceTree = "<group>"; };
+		A0824EAB1B74B748005BB05C /* article.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = article.html; sourceTree = "<group>"; };
 		C516989CF3E33BE22066F987 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,6 +267,8 @@
 				01CA61061B6AFF430099BBDB /* Utility.m */,
 				01CC5A761B72306700A8C5E4 /* AppNotice.h */,
 				01CC5A771B72306700A8C5E4 /* AppNotice.m */,
+				A0824EA01B74A4C7005BB05C /* ServiceApi.h */,
+				A0824EA11B74A4C7005BB05C /* ServiceApi.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -327,6 +337,7 @@
 		16E450B41B6592BD00EC2EBB /* swiftmi_oc */ = {
 			isa = PBXGroup;
 			children = (
+				A0824EAA1B74B748005BB05C /* htmlPlayer */,
 				01C952011B6F35D600318241 /* Models */,
 				01CA61081B6B472F0099BBDB /* Managers */,
 				01CA61041B6AFF1F0099BBDB /* Utility */,
@@ -384,6 +395,8 @@
 				16E450E01B65980E00EC2EBB /* PostTableViewController.m */,
 				01C9520C1B6F55B700318241 /* LoginController.h */,
 				01C9520D1B6F55B700318241 /* LoginController.m */,
+				A0824E911B749B28005BB05C /* PostDetailController.h */,
+				A0824E921B749B28005BB05C /* PostDetailController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -418,6 +431,14 @@
 				61E5B354896DCF5647964E31 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0824EAA1B74B748005BB05C /* htmlPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A0824EAB1B74B748005BB05C /* article.html */,
+			);
+			path = htmlPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -596,6 +617,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16E450C41B6592BD00EC2EBB /* Main.storyboard in Resources */,
+				A0824EAC1B74B748005BB05C /* article.html in Resources */,
 				16E450C91B6592BD00EC2EBB /* LaunchScreen.xib in Resources */,
 				16E450C61B6592BD00EC2EBB /* Images.xcassets in Resources */,
 			);
@@ -653,7 +675,9 @@
 				01CA610B1B6B474E0099BBDB /* DataManager.m in Sources */,
 				015861C31B70A18400445DF9 /* NSDictionary+NotNullKey.m in Sources */,
 				16E450BB1B6592BD00EC2EBB /* AppDelegate.m in Sources */,
+				A0824EA21B74A4C7005BB05C /* ServiceApi.m in Sources */,
 				01C9520E1B6F55B700318241 /* LoginController.m in Sources */,
+				A0824E931B749B28005BB05C /* PostDetailController.m in Sources */,
 				01C952071B6F38D900318241 /* Users.m in Sources */,
 				01D5083C1B665C1B00A48E7D /* CoreDataManager.m in Sources */,
 				015861C41B70A18400445DF9 /* UIImage+Tint.m in Sources */,

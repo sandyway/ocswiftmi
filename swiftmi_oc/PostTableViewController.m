@@ -15,6 +15,7 @@
 #import <AFNetworking.h>
 #import "FXKeychain.h"
 #import "LoginController.h"
+#import "PostDetailController.h"
 
 @interface PostTableViewController ()
 //internal var data:[AnyObject] = [AnyObject]()
@@ -268,17 +269,17 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Make sure your segue name in storyboard is the same as this line
-    if ([[segue identifier] isEqualToString:@"PostDetail"])
+//    if ([[segue identifier] isEqualToString:@"PostDetail"])
     {
         // Get reference to the destination view controller
-//        id vc = [segue destinationViewController];
-//        if (vc isKindOfClass:[PostDetailController class]) {
-//            PostDetailController* view = (PostDetailController*)vc;
-//            NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
-//            
-//            id article = self.data[indexPath.row];
-//            view.article = article;
-//        }
+        id vc = [segue destinationViewController];
+        if ([vc isKindOfClass:[PostDetailController class]]) {
+            PostDetailController* view = (PostDetailController*)vc;
+            NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
+            
+            id article = self.data[indexPath.row];
+            view.article = article;
+        }
         
         // Pass any objects to the view controller here, like...
 //        [vc setMyObjectHere:object];
