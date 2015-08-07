@@ -62,7 +62,8 @@
 
     [[DataManager manager] UserLogin:params success:^(NSURLSessionDataTask *task, id responseObject) {
         [self recoverLoginState];
-        NSDictionary* result = (NSDictionary*)responseObject;
+        NSError* error = nil;
+        NSDictionary *result = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:&error];
         if ([[result objectForSafeKey:@"isSuc"] boolValue]) {
             id user = [result objectForSafeKey:@"result"];
             
@@ -75,6 +76,10 @@
             [dalUser deleteAll];
             Users* currentUser = [dalUser addUser:user save:TRUE];
             [self goToBackView:currentUser];
+        }else {
+            NSString* msg_error = [result objectForSafeKey:@"msg"];
+            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"登陆失败" message:msg_error delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alert show];
         }
     } failure:^(NSError *error) {
         [self recoverLoginState];

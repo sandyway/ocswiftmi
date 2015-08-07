@@ -12,7 +12,6 @@
 #import "PostCell.h"
 #import "Utility.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import <AFNetworking.h>
 #import "FXKeychain.h"
 #import "LoginController.h"
 #import "PostDetailController.h"
@@ -220,8 +219,7 @@
         @strongify(self);
         self.loading = false;
         [self endRefresh:isPullRefresh];
-        NSDictionary* result = (NSDictionary*)responseObject;
-        
+        NSDictionary* result = (NSDictionary*)responseObject;        
         if ([[result objectForSafeKey:@"isSuc"] boolValue]) {
             NSArray* items =  (NSArray*)[result objectForSafeKey:@"result"];
             if ([items count] == 0) {
