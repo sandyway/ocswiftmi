@@ -18,6 +18,11 @@
 		01CA613A1B6B5A2E0099BBDB /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA61381B6B5A2E0099BBDB /* EXTScope.m */; };
 		01CC5A781B72306700A8C5E4 /* AppNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC5A771B72306700A8C5E4 /* AppNotice.m */; };
 		01CC9C051B6A56A30002378D /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC9C041B6A56A30002378D /* PostCell.m */; };
+		01CE25BC1B74584B00048364 /* Codedown.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CE25BB1B74584B00048364 /* Codedown.m */; };
+		01CE25CB1B7458A900048364 /* CodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CE25CA1B7458A900048364 /* CodeCell.m */; };
+		01CE25CE1B7458DD00048364 /* CodeDal.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CE25CD1B7458DD00048364 /* CodeDal.m */; };
+		01CE25D11B74597100048364 /* CodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CE25D01B74597100048364 /* CodeController.m */; };
+		01CE260F1B74C5B000048364 /* CodeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CE260E1B74C5B000048364 /* CodeDetailViewController.m */; };
 		01D244DD1B65DB73000CA13C /* PostDal.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D244DC1B65DB73000CA13C /* PostDal.m */; };
 		01D4D8721B73752E00CFF883 /* UserDal.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D4D8711B73752E00CFF883 /* UserDal.m */; };
 		01D5083C1B665C1B00A48E7D /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5083B1B665C1B00A48E7D /* CoreDataManager.m */; };
@@ -155,6 +160,16 @@
 		01CC5A771B72306700A8C5E4 /* AppNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNotice.m; sourceTree = "<group>"; };
 		01CC9C031B6A56A30002378D /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
 		01CC9C041B6A56A30002378D /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
+		01CE25BA1B74584B00048364 /* Codedown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Codedown.h; sourceTree = "<group>"; };
+		01CE25BB1B74584B00048364 /* Codedown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Codedown.m; sourceTree = "<group>"; };
+		01CE25C91B7458A900048364 /* CodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeCell.h; sourceTree = "<group>"; };
+		01CE25CA1B7458A900048364 /* CodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeCell.m; sourceTree = "<group>"; };
+		01CE25CC1B7458DD00048364 /* CodeDal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeDal.h; sourceTree = "<group>"; };
+		01CE25CD1B7458DD00048364 /* CodeDal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeDal.m; sourceTree = "<group>"; };
+		01CE25CF1B74597100048364 /* CodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeController.h; sourceTree = "<group>"; };
+		01CE25D01B74597100048364 /* CodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeController.m; sourceTree = "<group>"; };
+		01CE260D1B74C5B000048364 /* CodeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeDetailViewController.h; sourceTree = "<group>"; };
+		01CE260E1B74C5B000048364 /* CodeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeDetailViewController.m; sourceTree = "<group>"; };
 		01D244DB1B65DB73000CA13C /* PostDal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostDal.h; sourceTree = "<group>"; };
 		01D244DC1B65DB73000CA13C /* PostDal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostDal.m; sourceTree = "<group>"; };
 		01D4D8701B73752E00CFF883 /* UserDal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDal.h; sourceTree = "<group>"; };
@@ -243,6 +258,8 @@
 		01C952011B6F35D600318241 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				01CE25BA1B74584B00048364 /* Codedown.h */,
+				01CE25BB1B74584B00048364 /* Codedown.m */,
 				01C952051B6F38D900318241 /* Users.h */,
 				01C952061B6F38D900318241 /* Users.m */,
 				01C952021B6F38D900318241 /* Post.h */,
@@ -287,6 +304,8 @@
 		01CC9C061B6A57F10002378D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				01CE25C91B7458A900048364 /* CodeCell.h */,
+				01CE25CA1B7458A900048364 /* CodeCell.m */,
 				01CC9C031B6A56A30002378D /* PostCell.h */,
 				01CC9C041B6A56A30002378D /* PostCell.m */,
 			);
@@ -382,8 +401,12 @@
 			children = (
 				16E450DF1B65980E00EC2EBB /* PostTableViewController.h */,
 				16E450E01B65980E00EC2EBB /* PostTableViewController.m */,
+				01CE25CF1B74597100048364 /* CodeController.h */,
+				01CE25D01B74597100048364 /* CodeController.m */,
 				01C9520C1B6F55B700318241 /* LoginController.h */,
 				01C9520D1B6F55B700318241 /* LoginController.m */,
+				01CE260D1B74C5B000048364 /* CodeDetailViewController.h */,
+				01CE260E1B74C5B000048364 /* CodeDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -391,6 +414,8 @@
 		16E450E21B659CE100EC2EBB /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				01CE25CC1B7458DD00048364 /* CodeDal.h */,
+				01CE25CD1B7458DD00048364 /* CodeDal.m */,
 				01D244DB1B65DB73000CA13C /* PostDal.h */,
 				01D244DC1B65DB73000CA13C /* PostDal.m */,
 				01D5083A1B665C1B00A48E7D /* CoreDataManager.h */,
@@ -648,6 +673,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01CE260F1B74C5B000048364 /* CodeDetailViewController.m in Sources */,
 				16E450C11B6592BD00EC2EBB /* SecondViewController.m in Sources */,
 				01CA610E1B6B49EE0099BBDB /* SettingManager.m in Sources */,
 				01CA610B1B6B474E0099BBDB /* DataManager.m in Sources */,
@@ -658,16 +684,20 @@
 				01D5083C1B665C1B00A48E7D /* CoreDataManager.m in Sources */,
 				015861C41B70A18400445DF9 /* UIImage+Tint.m in Sources */,
 				16E450BE1B6592BD00EC2EBB /* FirstViewController.m in Sources */,
+				01CE25D11B74597100048364 /* CodeController.m in Sources */,
 				01D4D8721B73752E00CFF883 /* UserDal.m in Sources */,
 				16E450E11B65980E00EC2EBB /* PostTableViewController.m in Sources */,
+				01CE25CB1B7458A900048364 /* CodeCell.m in Sources */,
 				16E450B81B6592BD00EC2EBB /* main.m in Sources */,
 				16E450E81B659E6400EC2EBB /* Model.xcdatamodeld in Sources */,
 				01CA61071B6AFF430099BBDB /* Utility.m in Sources */,
+				01CE25CE1B7458DD00048364 /* CodeDal.m in Sources */,
 				01C952041B6F38D900318241 /* Post.m in Sources */,
 				01CA613A1B6B5A2E0099BBDB /* EXTScope.m in Sources */,
 				01D5083F1B665DF700A48E7D /* Constant.m in Sources */,
 				01CC5A781B72306700A8C5E4 /* AppNotice.m in Sources */,
 				01D244DD1B65DB73000CA13C /* PostDal.m in Sources */,
+				01CE25BC1B74584B00048364 /* Codedown.m in Sources */,
 				01CC9C051B6A56A30002378D /* PostCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

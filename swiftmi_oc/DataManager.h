@@ -30,5 +30,8 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
 - (NSURLSessionDataTask *)UserLogin:(NSDictionary *)parameters
                                success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                                failure:(void (^)(NSError *error))failure;
+- (NSURLSessionDataTask *)getCodeList:(int)maxId count:(int)count
+                              success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                              failure:(void (^)(NSError *error))failure;
 
 @end
