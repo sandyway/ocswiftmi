@@ -32,6 +32,7 @@ static NSMutableArray* mainViews = nil;
 }
 
 +(void)wait{
+    [self CheckInit];
     UIView* mainView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 78, 78)];
     mainView.layer.cornerRadius = 12;
     mainView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
