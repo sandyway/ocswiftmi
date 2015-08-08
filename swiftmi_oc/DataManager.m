@@ -156,6 +156,12 @@
     return [self requestWithMethod:RequestMethodJSONGET URLString:url parameters:nil success:success failure:failure];
 }
 
+- (NSURLSessionDataTask *)getCodeDetail:(int)codeId
+                            success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                            failure:(void (^)(NSError *error))failure{
+    NSString* url = [NSString stringWithFormat:@"/api/sharecode/%d", codeId];
+    return [self requestWithMethod:RequestMethodJSONGET URLString:url parameters:nil success:success failure:failure];
+}
 
 
 @end

@@ -27,6 +27,20 @@
 		01D4D8721B73752E00CFF883 /* UserDal.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D4D8711B73752E00CFF883 /* UserDal.m */; };
 		01D5083C1B665C1B00A48E7D /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5083B1B665C1B00A48E7D /* CoreDataManager.m */; };
 		01D5083F1B665DF700A48E7D /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5083E1B665DF700A48E7D /* Constant.m */; };
+		161A7D851B75F0C000D9788A /* pagedown in Resources */ = {isa = PBXBuildFile; fileRef = 161A7D841B75F0C000D9788A /* pagedown */; };
+		16E3CD1A1B75B88F0037EE85 /* article.html in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD091B75B88F0037EE85 /* article.html */; };
+		16E3CD1B1B75B88F0037EE85 /* article.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD0A1B75B88F0037EE85 /* article.js */; };
+		16E3CD1C1B75B88F0037EE85 /* bootstrap.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD0B1B75B88F0037EE85 /* bootstrap.min.css */; };
+		16E3CD1D1B75B88F0037EE85 /* code.html in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD0C1B75B88F0037EE85 /* code.html */; };
+		16E3CD1E1B75B88F0037EE85 /* code.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD0D1B75B88F0037EE85 /* code.js */; };
+		16E3CD1F1B75B88F0037EE85 /* highlight.pack.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD0E1B75B88F0037EE85 /* highlight.pack.js */; };
+		16E3CD201B75B88F0037EE85 /* jquery-2.1.3.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD0F1B75B88F0037EE85 /* jquery-2.1.3.min.js */; };
+		16E3CD211B75B88F0037EE85 /* jquery.githubRepoWidget.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD101B75B88F0037EE85 /* jquery.githubRepoWidget.js */; };
+		16E3CD221B75B88F0037EE85 /* moment.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD111B75B88F0037EE85 /* moment.min.js */; };
+		16E3CD261B75B88F0037EE85 /* template-native.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD161B75B88F0037EE85 /* template-native.js */; };
+		16E3CD271B75B88F0037EE85 /* tmpl.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD171B75B88F0037EE85 /* tmpl.js */; };
+		16E3CD281B75B88F0037EE85 /* xcode.css in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD181B75B88F0037EE85 /* xcode.css */; };
+		16E3CD291B75B88F0037EE85 /* zh-cn.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD191B75B88F0037EE85 /* zh-cn.js */; };
 		16E450B81B6592BD00EC2EBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E450B71B6592BD00EC2EBB /* main.m */; };
 		16E450BB1B6592BD00EC2EBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E450BA1B6592BD00EC2EBB /* AppDelegate.m */; };
 		16E450BE1B6592BD00EC2EBB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E450BD1B6592BD00EC2EBB /* FirstViewController.m */; };
@@ -184,6 +198,20 @@
 		01D5083B1B665C1B00A48E7D /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		01D5083D1B665DF700A48E7D /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		01D5083E1B665DF700A48E7D /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		161A7D841B75F0C000D9788A /* pagedown */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pagedown; sourceTree = "<group>"; };
+		16E3CD091B75B88F0037EE85 /* article.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = article.html; sourceTree = "<group>"; };
+		16E3CD0A1B75B88F0037EE85 /* article.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = article.js; sourceTree = "<group>"; };
+		16E3CD0B1B75B88F0037EE85 /* bootstrap.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bootstrap.min.css; sourceTree = "<group>"; };
+		16E3CD0C1B75B88F0037EE85 /* code.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = code.html; sourceTree = "<group>"; };
+		16E3CD0D1B75B88F0037EE85 /* code.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = code.js; sourceTree = "<group>"; };
+		16E3CD0E1B75B88F0037EE85 /* highlight.pack.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highlight.pack.js; sourceTree = "<group>"; };
+		16E3CD0F1B75B88F0037EE85 /* jquery-2.1.3.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.3.min.js"; sourceTree = "<group>"; };
+		16E3CD101B75B88F0037EE85 /* jquery.githubRepoWidget.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.githubRepoWidget.js; sourceTree = "<group>"; };
+		16E3CD111B75B88F0037EE85 /* moment.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = moment.min.js; sourceTree = "<group>"; };
+		16E3CD161B75B88F0037EE85 /* template-native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "template-native.js"; sourceTree = "<group>"; };
+		16E3CD171B75B88F0037EE85 /* tmpl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tmpl.js; sourceTree = "<group>"; };
+		16E3CD181B75B88F0037EE85 /* xcode.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = xcode.css; sourceTree = "<group>"; };
+		16E3CD191B75B88F0037EE85 /* zh-cn.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "zh-cn.js"; sourceTree = "<group>"; };
 		16E450B21B6592BD00EC2EBB /* swiftmi_oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftmi_oc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E450B61B6592BD00EC2EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E450B71B6592BD00EC2EBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -314,6 +342,7 @@
 		01CC9C061B6A57F10002378D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				16E3CD081B75B88F0037EE85 /* htmlPlayer */,
 				01CE25C91B7458A900048364 /* CodeCell.h */,
 				01CE25CA1B7458A900048364 /* CodeCell.m */,
 				01CC9C031B6A56A30002378D /* PostCell.h */,
@@ -329,6 +358,27 @@
 				01CA61361B6B5A2E0099BBDB /* EXTScope */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		16E3CD081B75B88F0037EE85 /* htmlPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				16E3CD091B75B88F0037EE85 /* article.html */,
+				16E3CD0A1B75B88F0037EE85 /* article.js */,
+				161A7D841B75F0C000D9788A /* pagedown */,
+				16E3CD0B1B75B88F0037EE85 /* bootstrap.min.css */,
+				16E3CD0C1B75B88F0037EE85 /* code.html */,
+				16E3CD0D1B75B88F0037EE85 /* code.js */,
+				16E3CD0E1B75B88F0037EE85 /* highlight.pack.js */,
+				16E3CD0F1B75B88F0037EE85 /* jquery-2.1.3.min.js */,
+				16E3CD101B75B88F0037EE85 /* jquery.githubRepoWidget.js */,
+				16E3CD111B75B88F0037EE85 /* moment.min.js */,
+				16E3CD161B75B88F0037EE85 /* template-native.js */,
+				16E3CD171B75B88F0037EE85 /* tmpl.js */,
+				16E3CD181B75B88F0037EE85 /* xcode.css */,
+				16E3CD191B75B88F0037EE85 /* zh-cn.js */,
+			);
+			path = htmlPlayer;
 			sourceTree = "<group>";
 		};
 		16E450A91B6592BD00EC2EBB = {
@@ -641,10 +691,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E3CD1E1B75B88F0037EE85 /* code.js in Resources */,
+				16E3CD1C1B75B88F0037EE85 /* bootstrap.min.css in Resources */,
 				16E450C41B6592BD00EC2EBB /* Main.storyboard in Resources */,
+				16E3CD261B75B88F0037EE85 /* template-native.js in Resources */,
+				16E3CD201B75B88F0037EE85 /* jquery-2.1.3.min.js in Resources */,
+				16E3CD211B75B88F0037EE85 /* jquery.githubRepoWidget.js in Resources */,
 				A0824EAC1B74B748005BB05C /* article.html in Resources */,
+				16E3CD1A1B75B88F0037EE85 /* article.html in Resources */,
+				16E3CD271B75B88F0037EE85 /* tmpl.js in Resources */,
+				16E3CD1B1B75B88F0037EE85 /* article.js in Resources */,
 				16E450C91B6592BD00EC2EBB /* LaunchScreen.xib in Resources */,
+				161A7D851B75F0C000D9788A /* pagedown in Resources */,
+				16E3CD281B75B88F0037EE85 /* xcode.css in Resources */,
 				16E450C61B6592BD00EC2EBB /* Images.xcassets in Resources */,
+				16E3CD291B75B88F0037EE85 /* zh-cn.js in Resources */,
+				16E3CD1D1B75B88F0037EE85 /* code.html in Resources */,
+				16E3CD221B75B88F0037EE85 /* moment.min.js in Resources */,
+				16E3CD1F1B75B88F0037EE85 /* highlight.pack.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

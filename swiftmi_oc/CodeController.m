@@ -11,6 +11,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "CodeDal.h"
 #import "CodeCell.h"
+#import "CodeDetailViewController.h"
 
 @interface CodeController ()
 @property (nonatomic, strong) NSMutableArray* data;
@@ -128,11 +129,11 @@ static UIEdgeInsets const sectionInsets = {6, 6, 6, 6};
     if ([item count] > 0) {
         NSIndexPath *indexPath = (NSIndexPath*)item[0];
         
-//        if (segue.destinationViewController isKindOfClass:[CodeDetailViewController class]) {
-//            CodeDetailViewController* view = (CodeDetailViewController*)segue.destinationViewController;
-//            id code = self.data[indexPath.row];
-//            view.shareCode = code;
-//        }
+        if ([segue.destinationViewController isKindOfClass:[CodeDetailViewController class]]) {
+            CodeDetailViewController* view = (CodeDetailViewController*)segue.destinationViewController;
+            id code = self.data[indexPath.row];
+            view.shareCode = code;
+        }
     }
 }
 

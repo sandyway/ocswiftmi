@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <link href="xcode.css" rel="stylesheet">
+            <link href="bootstrap.min.css" rel="stylesheet">
+                
+        <style type="text/css">
+            body{
+                 
+                -webkit-overflow-scrolling: touch;
+            }
+            a{
+                text-decoration:none;
+                underline:none;
+            }
+            .body
+            {
+                background-color:#fff;
+                font-size:20px;
+                margin:0px;
+                padding:10px 10px;
+                padding-bottom:10px;
+                padding-top:0px;
+                font-family: Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+                color: #747f8c;
+                
+            }
+            .night
+            {
+                background-color:#000;
+                color:#f1efef;
+            }
+            .fnormal
+            {
+                font-size:20 px;
+                line-height:22px;
+            }
+            .fmiddle
+            {
+                font-size:24px;
+                line-height:28px;
+            }
+            .flarge
+            {
+                font-size:28px;
+                line-height:34px;
+            }
+            p{
+               
+                margin:0px;
+                padding:0px;
+                text-align:justify;
+                word-break:break-all;
+            }
+            .content
+            {
+                padding:0px;
+                margin:0px 0px;
+                font-size:0.8em;
+                
+            }
+        .post-header{
+            margin: 20px auto;
+        }
+        .post-header .post-meta{
+            font-size: 14px;
+            
+            color: #747f8c;
+            margin-bottom: 20px;
+        }
+        .post-header h1{
+            font-size: 24px;
+            
+            font-weight: bold;
+            line-height: 1.4;
+            color: #38485a
+        }
+        h2 {
+            font-size:20px;
+            width:100%;
+            display: inline-block;
+            text-indent:10px;
+            border-left:solid 4px rgb(249, 110, 87);
+  
+        }
+        h3 {
+            font-size:18px;
+        }
+        h4 {
+            font-size:16px;
+        }
+        .post-header .post-meta{
+            margin-top: 16px;
+        }
+        .post-con{
+            font-size: 16px;
+            color: #333332;
+            line-height: 1.6;
+            word-break:break-all;
+            word-wrap:word-break;
+        }
+        .reply-content{
+            word-break:break-all;
+            word-wrap:word-break;
+        }
+        .post-con  p{
+            margin-bottom: 20px;
+            text-align: justify;
+            word-wrap:break-word;word-break: break-all;
+            
+            
+        }
+        .post-con img{
+            max-width:100%;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .content img{
+            max-width:100%;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .post-con >div {
+            margin-bottom: 10px;
+            text-align: justify;
+            
+        }
+        .post-con a{
+            color: #51aded;
+            border-bottom: 2px solid #eaeaea;
+        }
+        .post-con a:hover{
+            border-bottom: 2px solid #51aded;
+        }
+        .post-source{
+            margin:20px auto;
+            font-size: 14px;
+        }
+        pre {
+            display: block;
+            padding: 9.5px;
+            margin: 0 0 10px;
+            margin-top:10px;
+            font-size: 13px;
+            line-height: 1.42857143;
+            color: #333;
+            word-break:break-word;
+            word-wrap: break-word;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        dl.topics dd, dl.replies dd, dl#nodes dd {
+            margin-left: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #CCC;
+        }
+        
+        .topic, .reply {
+            border-bottom: 1px dashed #CCC;
+            padding: 12px 0;
+        }
+            </style>
+    </head>
+    <body class="body fnormal">
+        <div id="content"></div>
+        <script src="jquery-2.1.3.min.js"></script>
+        <script src="template-native.js"></script>
+        <script src="moment.min.js"></script>
+        <script src="zh-cn.js"></script>
+        <script src="jquery.githubRepoWidget.js"></script>
+        <script type="text/javascript" src="./pagedown/Markdown.Converter.js"></script>
+        <script type="text/javascript" src="./pagedown/Markdown.Editor.js"></script>
+        <script type="text/javascript" src="./pagedown/Markdown.Sanitizer.js"></script>
+        <script src="highlight.pack.js"></script>
+        <script src="code.js"></script>
+        <script type="text/html" id="content-tmpl">
+            <div class="content">
+            <article class="post-detail">
+            <section  class="post-header">
+            <div class="page-header">
+            <h1><%=code.title %></h1>
+         <div class="clearfix">
+        由 <a href="http://www.swiftmi.com/member/<%=code.username %>"><%=code.username %></a> 在 <%=moment(code.createTime*1000).fromNow() %> 分享 <%=code.viewCount %> 次点击,<%=code.downCount %>次下载
+        
+        
+        </div>
+        
+        <hr class="clearfix" style="margin-top: 10px;">
+        
+        <div class="col-md-6">
+        <span>来源:</span>
+        <%if(code.sourceUrl&&code.sourceType==1){ %>
+            <a href="<%=code.sourceUrl%>" target="_blank"><%=code.author %>/<%=code.sourceName %></a>
+            <%}else{%>
+                <a href="http://www.swiftmi.com/code4swift" target="_blank">code4swift</a>
+                <%}%>
+        </div>
+        <div class="col-md-6">
+        <span>Licence:</span>
+        <%=code.licence %>
+        </div>
+        <div class="col-md-6">
+        <span>作者:</span>
+        <%=code.author %>
+        </div>
+        <div class="col-md-6">
+        <span>分类:</span>
+        <a href="http://www.swiftmi.com/code4swift/category/<%=code.categoryId %>"><%=code.categoryName %></a>
+        </div>
+        <div class="col-md-6">
+        <span>平台:</span>
+        <%=code.platform %>
+        </div>
+        <div class="col-md-6">
+        <span>设备:</span>
+        <%=code.devices %>
+        </div>
+        <div class="col-md-6">
+        <span>大小:</span>
+        <%=code.contentLength %> M
+        </div>
+        <div class="col-md-6">
+        <span>更新:</span>
+        <%=moment(code.updateTime*1000).fromNow() %>
+        </div>
+        <div class="col-md-12">
+        <span>关键字:</span>
+        <%=code.tags %>
+        </div>
+        <div class="clearfix"></div>
+        
+        </div>
+        <div style="margin-top: 20px;">
+        <%if(code.sourceType==1){%>
+            <div class="github-widget" data-repo="<%=code.author %>/<%=code.sourceName %>"></div>
+            <%} %>
+        </div>
+            </section>
+            
+            <section class="post-con">
+             <h2>预览图</h2>
+            <p><img src="<%=code.preview %>"/></p>
+            <%=#md.makeHtml(code.content) %>
+            </section>
+            </article>
+            </div>
+            <div>
+            <div id="replies" class="content">
+            <span><%=comments.length%> 回复</span>
+            <hr>
+            <%for(var i=0;i<comments.length;i++){ %>
+                <% var comment = comments[i]; %>
+            
+                               <dl class="replies">
+                               <a name="cmt<%=comment.commentId%>"></a>
+                               <dd id="<%=comment.commentId%>">
+                               <span class="label label-default pull-right">#<%=(i+1)%></span>
+                               
+                               <a href="http://www.swiftmi.com/member/<%=comment.username %>" class="pull-left" style="margin-right: 10px;"><img class="img-rounded" src="<%=comment.avatar %>-a48" alt="<%=comment.username %>"></a>
+                               <div class="info">
+                               <a href="http://www.swiftmi.com/member/<%=comment.username %>"><strong><%=comment.username %></strong></a> •
+                               <%=moment(comment.commentTime*1000).fromNow() %>
+                               </div>
+                               <div class="space"></div>
+                               <div class="reply-content">
+                               <%if(comment.isHtml==1){%>
+                               <%=#comment.content%>
+                               <%}else{%>
+                               <%=#md.makeHtml(comment.content)%>
+                               <%}%>
+                               </div>
+                               <div class="clear"></div>
+                               </dd>
+                               
+                               </dl>
+             <%}%>
+            
+            </div>
+            </script>
+
+        <script type="text/html" id="comment-tmpl">
+            <dl class="replies">
+                <a name="<%=comment.commentId%>"></a>
+                <dd id="<%=comment.commentId%>">
+                    <span class="label label-default pull-right">#<%=comment.index+1%></span>
+
+                    <a href="http://www.swiftmi.com/member/<%=comment.username %>" class="pull-left" style="margin-right: 10px;"><img class="img-rounded" src="<%=comment.avatar %>-a48" alt="<%=comment.username %>"></a>
+                    <div class="info">
+                        <a href="http://www.swiftmi.com/member/<%=comment.username %>"><strong><%=comment.username %></strong></a> •
+                        <%=comment.fromNow  %>
+                    </div>
+                    <div class="space"></div>
+                    <div class="reply-content">
+                        <%=#md.makeHtml(comment.content)%>
+                    </div>
+                    <div class="clear"></div>
+                </dd>
+
+            </dl>
+        </script>
+    </body>
+    
+</html>

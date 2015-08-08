@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -390,6 +390,7 @@
                                     <outlet property="preview" destination="JbR-Ri-Nb2" id="7XY-5K-K1E"/>
                                     <outlet property="timeLabel" destination="YdB-D5-1sN" id="zds-zU-ylY"/>
                                     <outlet property="title" destination="H9k-aG-oyL" id="tCI-xx-OmW"/>
+                                    <segue destination="WWy-IQ-X2K" kind="show" identifier="ddd" id="vJY-xh-Sgx"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -407,7 +408,7 @@
         <!--源码详情-->
         <scene sceneID="e10-CM-WXp">
             <objects>
-                <viewController id="WWy-IQ-X2K" userLabel="源码详情" customClass="CodeDetailViewcontroller" sceneMemberID="viewController">
+                <viewController id="WWy-IQ-X2K" userLabel="源码详情" customClass="CodeDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dKA-Pk-sBa"/>
                         <viewControllerLayoutGuide type="bottom" id="rYu-UW-PYc"/>

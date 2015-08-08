@@ -44,6 +44,7 @@ static NSMutableArray* mainViews = nil;
     
     mainView.center = rv.center;
     [rv addSubview:mainView];
+    [mainViews addObject:mainView];
 }
 
 +(void)showText:(NSString*)text{
