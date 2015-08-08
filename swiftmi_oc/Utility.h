@@ -12,5 +12,5 @@
 
 +(NSString*) formatDate:(NSDate*)date;
 +(id) GetViewController:(NSString*)controllerName;
-
++(NSString*)rawString:(id)object encoding:(int)encoding opt:(NSJSONWritingOptions)opt;
 @end
