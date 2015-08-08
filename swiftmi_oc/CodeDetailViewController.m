@@ -7,6 +7,7 @@
 //
 
 #import "CodeDetailViewcontroller.h"
+#import "WebViewController.h"
 
 @interface CodeDetailViewController ()
 @property (nonatomic, strong)id theNewShareCode;
@@ -99,10 +100,9 @@
                 [self stopLoading];
             }
             else if ([params[0] compare:@"http"] == NSOrderedSame || [params[0] compare:@"https"] == NSOrderedSame) {
-                // todo: webview storyboard and class
-//                id webViewController = [Utility GetViewController:@"webViewController"];
-//                webViewController.webUrl = reqUrl
-//                [self presentViewController:webViewController animated: true completion: nil];
+                WebViewController* webViewController = (WebViewController*)[Utility GetViewController:@"webViewController"];
+                webViewController.webUrl = reqUrl;
+                [self presentViewController:webViewController animated: true completion: nil];
             }
             
         }
