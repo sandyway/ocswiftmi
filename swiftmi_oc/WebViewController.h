@@ -11,4 +11,5 @@
 @interface WebViewController : UIViewController<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (nonatomic, strong)NSString* webUrl;
+@property (nonatomic)BOOL isPop;
 @end

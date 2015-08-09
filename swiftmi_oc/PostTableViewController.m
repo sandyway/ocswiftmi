@@ -210,11 +210,6 @@
     self.loading = true;
     
     @weakify(self);
-//    [[DataManager manager] getTopicList:maxId count:16 success:^(NSURLSessionDataTask *task, id responseObject) {
-//        
-//    } failure:^(NSError *error) {
-//        
-//    }];
     [[DataManager manager] getTopicList:maxId count:16 success:^(NSURLSessionDataTask *task, id responseObject) {
         @strongify(self);
         self.loading = false;

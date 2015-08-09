@@ -9,7 +9,7 @@
 #import "WebViewController.h"
 
 @interface WebViewController ()
-@property (nonatomic)BOOL isPop;
+
 @end
 
 @implementation WebViewController
