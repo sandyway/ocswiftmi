@@ -42,6 +42,8 @@
 		16E3CD271B75B88F0037EE85 /* tmpl.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD171B75B88F0037EE85 /* tmpl.js */; };
 		16E3CD281B75B88F0037EE85 /* xcode.css in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD181B75B88F0037EE85 /* xcode.css */; };
 		16E3CD291B75B88F0037EE85 /* zh-cn.js in Resources */ = {isa = PBXBuildFile; fileRef = 16E3CD191B75B88F0037EE85 /* zh-cn.js */; };
+		16E3EF031B7727D50036A127 /* BookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E3EF021B7727D50036A127 /* BookCell.m */; };
+		16E3EF061B7728B60036A127 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E3EF051B7728B60036A127 /* BookViewController.m */; };
 		16E450B81B6592BD00EC2EBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E450B71B6592BD00EC2EBB /* main.m */; };
 		16E450BB1B6592BD00EC2EBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E450BA1B6592BD00EC2EBB /* AppDelegate.m */; };
 		16E450BE1B6592BD00EC2EBB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E450BD1B6592BD00EC2EBB /* FirstViewController.m */; };
@@ -130,6 +132,10 @@
 		16E3CD171B75B88F0037EE85 /* tmpl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tmpl.js; sourceTree = "<group>"; };
 		16E3CD181B75B88F0037EE85 /* xcode.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = xcode.css; sourceTree = "<group>"; };
 		16E3CD191B75B88F0037EE85 /* zh-cn.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "zh-cn.js"; sourceTree = "<group>"; };
+		16E3EF011B7727D50036A127 /* BookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCell.h; sourceTree = "<group>"; };
+		16E3EF021B7727D50036A127 /* BookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCell.m; sourceTree = "<group>"; };
+		16E3EF041B7728B60036A127 /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		16E3EF051B7728B60036A127 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
 		16E450B21B6592BD00EC2EBB /* swiftmi_oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftmi_oc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E450B61B6592BD00EC2EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E450B71B6592BD00EC2EBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -246,6 +252,8 @@
 				01CE25CA1B7458A900048364 /* CodeCell.m */,
 				01CC9C031B6A56A30002378D /* PostCell.h */,
 				01CC9C041B6A56A30002378D /* PostCell.m */,
+				16E3EF011B7727D50036A127 /* BookCell.h */,
+				16E3EF021B7727D50036A127 /* BookCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -370,6 +378,8 @@
 				A0824E921B749B28005BB05C /* PostDetailController.m */,
 				16E02C761B76401B00592F40 /* WebViewController.h */,
 				16E02C771B76401B00592F40 /* WebViewController.m */,
+				16E3EF041B7728B60036A127 /* BookViewController.h */,
+				16E3EF051B7728B60036A127 /* BookViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -594,6 +604,8 @@
 				01CC5A781B72306700A8C5E4 /* AppNotice.m in Sources */,
 				01D244DD1B65DB73000CA13C /* PostDal.m in Sources */,
 				01CE25BC1B74584B00048364 /* Codedown.m in Sources */,
+				16E3EF061B7728B60036A127 /* BookViewController.m in Sources */,
+				16E3EF031B7727D50036A127 /* BookCell.m in Sources */,
 				01CC9C051B6A56A30002378D /* PostCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
