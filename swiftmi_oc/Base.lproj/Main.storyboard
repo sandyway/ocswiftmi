@@ -639,7 +639,7 @@
         <!--我-->
         <scene sceneID="Zu6-Fu-2k3">
             <objects>
-                <tableViewController id="N8n-bK-ktf" userLabel="我" sceneMemberID="viewController">
+                <tableViewController id="N8n-bK-ktf" userLabel="我" customClass="MyController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="SA8-zZ-LNz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -771,6 +771,11 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="27x-cH-Q1n"/>
                     <navigationItem key="navigationItem" title="我" id="hU3-MF-u0a"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="oL4-Ew-Is8" id="UTF-2x-jg4"/>
+                        <outlet property="logoutCell" destination="p5B-Pv-Vdm" id="Vsc-Fn-73i"/>
+                        <outlet property="signatureLabel" destination="hXQ-lC-rLI" id="xBz-ZE-Byr"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tB7-mz-b1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
