@@ -30,3 +30,5 @@ swiftmi_oc.xcodeproj/project.xcworkspace/xcuserdata/swing.xcuserdatad/UserInterf
 swiftmi_oc.xcodeproj/project.xcworkspace/xcuserdata/swing.xcuserdatad/UserInterfaceState.xcuserstate
 
 *.xcuserstate
+
+*.xcbkptlist

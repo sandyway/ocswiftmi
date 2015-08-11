@@ -131,6 +131,7 @@ static UIEdgeInsets const sectionInsets = {6, 6, 6, 6};
         
         if ([segue.destinationViewController isKindOfClass:[CodeDetailViewController class]]) {
             CodeDetailViewController* view = (CodeDetailViewController*)segue.destinationViewController;
+            view.hidesBottomBarWhenPushed = YES;
             id code = self.data[indexPath.row];
             view.shareCode = code;
         }

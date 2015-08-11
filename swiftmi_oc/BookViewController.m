@@ -165,6 +165,7 @@
     NSString* bookUrl = [item objectForSafeKey:@"link"];
     if (bookUrl != nil) {
         WebViewController* webViewController = [Utility GetViewController:@"webViewController"];
+//        webViewController.hidesBottomBarWhenPushed = YES;
         webViewController.webUrl = bookUrl;
         webViewController.isPop = TRUE;
         [self.navigationController pushViewController:webViewController animated:TRUE];

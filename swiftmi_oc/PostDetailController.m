@@ -62,7 +62,7 @@
     CGRect frame = self.view.frame;
     frame.origin.y = -endKeyboardRect.size.height;
     
-    CGRect inputW = self.inputView.frame;
+    CGRect inputW = self.inputWrapView.frame;
     CGRect newFrame = CGRectMake(inputW.origin.x, inputW.origin.y-80, inputW.size.width, inputW.size.height+90);
     
     @weakify(self);
@@ -70,7 +70,7 @@
         @strongify(self);
         [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"$('body').css({'padding-top':'%fpx'});", endKeyboardRect.size.height]];
         
-        for (NSLayoutConstraint* constraint in self.inputView.constraints){
+        for (NSLayoutConstraint* constraint in self.inputWrapView.constraints){
             if (constraint.firstAttribute == NSLayoutAttributeHeight){
                 constraint.constant = 80;
                 break;
@@ -94,7 +94,7 @@
         [self.webView stringByEvaluatingJavaScriptFromString:@"$('body').css({'padding-top':'0px'});"];
         self.view.frame = frame;
         
-        for (NSLayoutConstraint* constraint in self.inputView.constraints) {
+        for (NSLayoutConstraint* constraint in self.inputWrapView.constraints) {
             if (constraint.firstAttribute == NSLayoutAttributeHeight) {
                 constraint.constant = 50;
                 break;
@@ -128,7 +128,11 @@
             NSURL* url = [NSURL fileURLWithPath:path];
             NSURLRequest* request = [NSURLRequest requestWithURL:url];
             dispatch_async(dispatch_get_main_queue(), ^{
-                self.inputView.hidden = FALSE;
+                [Utility delayCallback:^{
+                    @strongify(self);
+                    //code to be executed on the main queue after delay
+                    self.inputWrapView.hidden = FALSE;
+                } forTotalSeconds:0.5];
                 [self.webView loadRequest:request];
             });
         }
@@ -149,7 +153,7 @@
     self.webView.scrollView.delegate = self;
     
     [self startLoading];
-    self.inputWrapView.hidden = true;
+    self.inputWrapView.hidden = TRUE;
     self.title = @"主题帖";
     [self loadData];
 }
