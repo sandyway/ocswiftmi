@@ -39,9 +39,10 @@
     
     self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         @strongify(self);
-        if ([self.data count] > 0) {
-            int maxId = [[self.data.lastObject objectForSafeKey:@"bookId"] intValue];
-            [self loadData:[self GetBookType] maxId:maxId isPullRefresh:FALSE];
+        NSMutableArray* curTypeBooks = self.data[_bookType.selectedSegmentIndex];
+        if ([curTypeBooks count] > 0) {
+                int maxId = [[curTypeBooks.lastObject objectForSafeKey:@"bookId"] intValue];
+                [self loadData:[self GetBookType] maxId:maxId isPullRefresh:FALSE];
         }
     }];
     

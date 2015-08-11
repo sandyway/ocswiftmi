@@ -163,7 +163,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="wEy-h0-w9L" firstAttribute="top" secondItem="3F9-fZ-iqJ" secondAttribute="top" constant="2" id="2Za-cO-16E"/>
                                     <constraint firstItem="wEy-h0-w9L" firstAttribute="leading" secondItem="3F9-fZ-iqJ" secondAttribute="leading" constant="8" id="CFm-xu-w2m"/>
@@ -178,7 +178,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ixC-Bb-7LQ" firstAttribute="top" secondItem="3F9-fZ-iqJ" secondAttribute="bottom" id="Q21-V2-Cx0"/>
+                            <constraint firstItem="ixC-Bb-7LQ" firstAttribute="top" secondItem="3F9-fZ-iqJ" secondAttribute="bottom" id="4qG-Z4-Sxs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3F9-fZ-iqJ" secondAttribute="trailing" constant="-16" id="Q3Q-eF-9w9"/>
                             <constraint firstItem="3F9-fZ-iqJ" firstAttribute="leading" secondItem="ByG-jV-ENN" secondAttribute="leadingMargin" constant="-16" id="Sj9-36-ZVf"/>
                             <constraint firstItem="NmX-ey-u4P" firstAttribute="leading" secondItem="ByG-jV-ENN" secondAttribute="leadingMargin" constant="-16" id="cnU-po-exA"/>
