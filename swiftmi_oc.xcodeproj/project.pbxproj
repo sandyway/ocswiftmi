@@ -17,6 +17,10 @@
 		01CA610E1B6B49EE0099BBDB /* SettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA610D1B6B49EE0099BBDB /* SettingManager.m */; };
 		01CA613A1B6B5A2E0099BBDB /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA61381B6B5A2E0099BBDB /* EXTScope.m */; };
 		01CC5A781B72306700A8C5E4 /* AppNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC5A771B72306700A8C5E4 /* AppNotice.m */; };
+		01CC876E1B78283900593199 /* MyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC876D1B78283900593199 /* MyController.m */; };
+		01CC87711B782BF500593199 /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01CC87701B782BF500593199 /* ProfileHeaderView.xib */; };
+		01CC87741B782D3E00593199 /* setting-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01CC87731B782D3E00593199 /* setting-bg.jpg */; };
+		01CC87771B783DDC00593199 /* ProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC87761B783DDC00593199 /* ProfileHeaderView.m */; };
 		01CC9C051B6A56A30002378D /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CC9C041B6A56A30002378D /* PostCell.m */; };
 		01CE25BC1B74584B00048364 /* Codedown.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CE25BB1B74584B00048364 /* Codedown.m */; };
 		01CE25CB1B7458A900048364 /* CodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CE25CA1B7458A900048364 /* CodeCell.m */; };
@@ -93,6 +97,12 @@
 		01CA61391B6B5A2E0099BBDB /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		01CC5A761B72306700A8C5E4 /* AppNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNotice.h; sourceTree = "<group>"; };
 		01CC5A771B72306700A8C5E4 /* AppNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNotice.m; sourceTree = "<group>"; };
+		01CC876C1B78283900593199 /* MyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyController.h; sourceTree = "<group>"; };
+		01CC876D1B78283900593199 /* MyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyController.m; sourceTree = "<group>"; };
+		01CC87701B782BF500593199 /* ProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		01CC87731B782D3E00593199 /* setting-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "setting-bg.jpg"; sourceTree = "<group>"; };
+		01CC87751B783DDC00593199 /* ProfileHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderView.h; sourceTree = "<group>"; };
+		01CC87761B783DDC00593199 /* ProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderView.m; sourceTree = "<group>"; };
 		01CC9C031B6A56A30002378D /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
 		01CC9C041B6A56A30002378D /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 		01CE25BA1B74584B00048364 /* Codedown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Codedown.h; sourceTree = "<group>"; };
@@ -244,9 +254,28 @@
 			path = EXTScope;
 			sourceTree = "<group>";
 		};
+		01CC876F1B782BA600593199 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				01CC87701B782BF500593199 /* ProfileHeaderView.xib */,
+				01CC87751B783DDC00593199 /* ProfileHeaderView.h */,
+				01CC87761B783DDC00593199 /* ProfileHeaderView.m */,
+			);
+			name = profile;
+			sourceTree = "<group>";
+		};
+		01CC87721B782D3100593199 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01CC87731B782D3E00593199 /* setting-bg.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		01CC9C061B6A57F10002378D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				01CC876F1B782BA600593199 /* profile */,
 				16E3CD081B75B88F0037EE85 /* htmlPlayer */,
 				01CE25C91B7458A900048364 /* CodeCell.h */,
 				01CE25CA1B7458A900048364 /* CodeCell.m */,
@@ -312,6 +341,7 @@
 		16E450B41B6592BD00EC2EBB /* swiftmi_oc */ = {
 			isa = PBXGroup;
 			children = (
+				01CC87721B782D3100593199 /* Resources */,
 				A0824EAA1B74B748005BB05C /* htmlPlayer */,
 				01C952011B6F35D600318241 /* Models */,
 				01CA61081B6B472F0099BBDB /* Managers */,
@@ -380,6 +410,8 @@
 				16E02C771B76401B00592F40 /* WebViewController.m */,
 				16E3EF041B7728B60036A127 /* BookViewController.h */,
 				16E3EF051B7728B60036A127 /* BookViewController.m */,
+				01CC876C1B78283900593199 /* MyController.h */,
+				01CC876D1B78283900593199 /* MyController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -513,9 +545,11 @@
 				16E450C41B6592BD00EC2EBB /* Main.storyboard in Resources */,
 				16E3CD261B75B88F0037EE85 /* template-native.js in Resources */,
 				16E3CD201B75B88F0037EE85 /* jquery-2.1.3.min.js in Resources */,
+				01CC87711B782BF500593199 /* ProfileHeaderView.xib in Resources */,
 				16E3CD211B75B88F0037EE85 /* jquery.githubRepoWidget.js in Resources */,
 				A0824EAC1B74B748005BB05C /* article.html in Resources */,
 				16E3CD1A1B75B88F0037EE85 /* article.html in Resources */,
+				01CC87741B782D3E00593199 /* setting-bg.jpg in Resources */,
 				16E3CD271B75B88F0037EE85 /* tmpl.js in Resources */,
 				16E3CD1B1B75B88F0037EE85 /* article.js in Resources */,
 				16E450C91B6592BD00EC2EBB /* LaunchScreen.xib in Resources */,
@@ -595,11 +629,13 @@
 				16E450E11B65980E00EC2EBB /* PostTableViewController.m in Sources */,
 				01CE25CB1B7458A900048364 /* CodeCell.m in Sources */,
 				16E450B81B6592BD00EC2EBB /* main.m in Sources */,
+				01CC876E1B78283900593199 /* MyController.m in Sources */,
 				16E450E81B659E6400EC2EBB /* Model.xcdatamodeld in Sources */,
 				01CA61071B6AFF430099BBDB /* Utility.m in Sources */,
 				01CE25CE1B7458DD00048364 /* CodeDal.m in Sources */,
 				01C952041B6F38D900318241 /* Post.m in Sources */,
 				01CA613A1B6B5A2E0099BBDB /* EXTScope.m in Sources */,
+				01CC87771B783DDC00593199 /* ProfileHeaderView.m in Sources */,
 				01D5083F1B665DF700A48E7D /* Constant.m in Sources */,
 				01CC5A781B72306700A8C5E4 /* AppNotice.m in Sources */,
 				01D244DD1B65DB73000CA13C /* PostDal.m in Sources */,

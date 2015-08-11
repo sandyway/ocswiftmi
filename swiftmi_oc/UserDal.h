@@ -13,4 +13,5 @@
 -(void) save;
 -(void) deleteAll;
 -(Users*)addUser:(id)obj save:(BOOL)save;
+-(Users*)getCurrentUser;
 @end
