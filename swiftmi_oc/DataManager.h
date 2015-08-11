@@ -23,6 +23,7 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
 @property (nonatomic, copy) NSString* token;
 @property (nonatomic, assign) BOOL preferHttps;
 
+-(NSString*)getBaseUrl;
 - (NSURLSessionDataTask *)getTopicList:(int)maxId count:(int)count
                                          success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                                failure:(void (^)(NSError *error))failure;
@@ -40,5 +41,11 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
 - (NSURLSessionDataTask *)BookList:(NSInteger)type maxId:(NSInteger)maxId count:(NSInteger)count
                                success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                                failure:(void (^)(NSError *error))failure;
+- (NSURLSessionDataTask *)TopicDetail:(NSInteger)topicId
+                           success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                           failure:(void (^)(NSError *error))failure;
+- (NSURLSessionDataTask *)TopicComment:(NSDictionary*)parameters
+                              success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                              failure:(void (^)(NSError *error))failure;
 
 @end
