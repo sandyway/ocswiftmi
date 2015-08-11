@@ -31,6 +31,10 @@
     return self;
 }
 
+-(NSString*)getBaseUrl{
+    return _manager.baseURL.absoluteString;
+}
+
 - (void)setPreferHttps:(BOOL)preferHttps {
     _preferHttps = preferHttps;
     
@@ -167,10 +171,23 @@
 - (NSURLSessionDataTask *)BookList:(NSInteger)type maxId:(NSInteger)maxId count:(NSInteger)count
                            success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                            failure:(void (^)(NSError *error))failure{
-    NSString* url = [NSString stringWithFormat:@"/api/books/%ld/%ld/\%ld", (long)type, (long)maxId, (long)count];
+    NSString* url = [NSString stringWithFormat:@"/api/books/%ld/%ld/%ld", (long)type, (long)maxId, (long)count];
     return [self requestWithMethod:RequestMethodJSONGET URLString:url parameters:nil success:success failure:failure];
     
 }
 
+- (NSURLSessionDataTask *)TopicDetail:(NSInteger)topicId
+                              success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                              failure:(void (^)(NSError *error))failure{
+    NSString* url = [NSString stringWithFormat:@"/api/topic/%ld", (long)topicId];
+    return [self requestWithMethod:RequestMethodJSONGET URLString:url parameters:nil success:success failure:failure];
+}
+
+- (NSURLSessionDataTask *)TopicComment:(NSDictionary*)parameters
+                               success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                               failure:(void (^)(NSError *error))failure{
+    NSString* url = @"/api/topic/comment";
+    return [self requestWithMethod:RequestMethodHTTPPOST URLString:url parameters:parameters success:success failure:failure];
+}
 
 @end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -140,38 +140,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NmX-ey-u4P">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NmX-ey-u4P">
                                 <rect key="frame" x="0.0" y="64" width="600" height="486"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3F9-fZ-iqJ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3F9-fZ-iqJ" userLabel="Reply View">
                                 <rect key="frame" x="0.0" y="501" width="600" height="50"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEy-h0-w9L">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wEy-h0-w9L">
                                         <rect key="frame" x="8" y="2" width="520" height="46"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAN-3a-h7Q">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAN-3a-h7Q">
                                         <rect key="frame" x="548" y="2" width="30" height="46"/>
                                         <state key="normal" title="回复">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="replyClick:" destination="LsA-Wn-dnJ" eventType="touchUpInside" id="as1-A0-94m"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wEy-h0-w9L" firstAttribute="top" secondItem="3F9-fZ-iqJ" secondAttribute="top" constant="2" id="2Za-cO-16E"/>
+                                    <constraint firstItem="wEy-h0-w9L" firstAttribute="leading" secondItem="3F9-fZ-iqJ" secondAttribute="leading" constant="8" id="CFm-xu-w2m"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="G8I-YZ-6vd"/>
+                                    <constraint firstItem="wEy-h0-w9L" firstAttribute="bottom" secondItem="hAN-3a-h7Q" secondAttribute="bottom" id="N2T-qy-uqq"/>
+                                    <constraint firstItem="wEy-h0-w9L" firstAttribute="centerY" secondItem="hAN-3a-h7Q" secondAttribute="centerY" id="Q7n-9Z-NrE"/>
+                                    <constraint firstItem="hAN-3a-h7Q" firstAttribute="leading" secondItem="wEy-h0-w9L" secondAttribute="trailing" constant="20" id="mSk-Xg-fIs"/>
+                                    <constraint firstAttribute="trailing" secondItem="hAN-3a-h7Q" secondAttribute="trailing" constant="22" id="otv-ty-aWN"/>
+                                    <constraint firstAttribute="bottom" secondItem="wEy-h0-w9L" secondAttribute="bottom" constant="2" id="qDs-u2-Vzf"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ixC-Bb-7LQ" firstAttribute="top" secondItem="3F9-fZ-iqJ" secondAttribute="bottom" id="Q21-V2-Cx0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3F9-fZ-iqJ" secondAttribute="trailing" constant="-16" id="Q3Q-eF-9w9"/>
+                            <constraint firstItem="3F9-fZ-iqJ" firstAttribute="leading" secondItem="ByG-jV-ENN" secondAttribute="leadingMargin" constant="-16" id="Sj9-36-ZVf"/>
+                            <constraint firstItem="NmX-ey-u4P" firstAttribute="leading" secondItem="ByG-jV-ENN" secondAttribute="leadingMargin" constant="-16" id="cnU-po-exA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NmX-ey-u4P" secondAttribute="trailing" constant="-16" id="lRH-xB-tiL"/>
+                            <constraint firstItem="ixC-Bb-7LQ" firstAttribute="top" secondItem="NmX-ey-u4P" secondAttribute="bottom" constant="1" id="mwm-Sh-9yU"/>
+                            <constraint firstItem="NmX-ey-u4P" firstAttribute="top" secondItem="sTU-VJ-hAT" secondAttribute="bottom" id="nwg-cI-zUf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="FYf-7r-dGq" userLabel="Navigation item">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Bkd-K5-LbJ" userLabel="Action"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Bkd-K5-LbJ" userLabel="Action">
+                            <connections>
+                                <action selector="shareClick:" destination="LsA-Wn-dnJ" id="YW6-oI-xOO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="inputReply" destination="wEy-h0-w9L" id="uCD-Ms-O9K"/>
-                        <outlet property="view" destination="3F9-fZ-iqJ" id="Og0-Ev-zlX"/>
-                        <outlet property="webView" destination="NmX-ey-u4P" id="cHy-F0-eQI"/>
+                        <outlet property="inputReply" destination="wEy-h0-w9L" id="hPD-h0-WE6"/>
+                        <outlet property="inputWrapView" destination="3F9-fZ-iqJ" id="uat-x0-ox4"/>
+                        <outlet property="webView" destination="NmX-ey-u4P" id="qC3-xS-aCg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MtV-OJ-mnv" userLabel="First Responder" sceneMemberID="firstResponder"/>

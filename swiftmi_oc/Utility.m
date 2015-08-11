@@ -7,6 +7,8 @@
 //
 
 #import "Utility.h"
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKUI/ShareSDKUI.h>
 
 @implementation Utility
 
@@ -42,6 +44,36 @@
     }else{
         return nil;
     }
+}
+
++(void)share:(NSString*)title desc:(NSString*)desc imgUrl:(NSString*)imgUrl linkUrl:(NSString*)linkUrl{
+    if (imgUrl == nil) {
+        imgUrl = @"http://swiftmi.qiniudn.com/swiftmi180icon.png";
+    }
+    
+    NSMutableDictionary* shareParams = [NSMutableDictionary dictionary];
+    [shareParams SSDKSetupShareParamsByText:desc
+                                     images:imgUrl
+                                        url:[NSURL URLWithString:linkUrl]
+                                      title:title
+                                       type:SSDKContentTypeAuto];
+    [ShareSDK showShareActionSheet:nil items:nil shareParams:shareParams onShareStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end) {
+        switch (state) {
+            case SSDKResponseStateSuccess:
+            {
+                UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                                 message:@"分享成功"
+                                                                delegate:self
+                                                       cancelButtonTitle:@"ok"
+                                                       otherButtonTitles:nil];
+                [alert show];
+            }
+                break;
+                
+            default:
+                break;
+        }
+    }];    
 }
 
 @end
