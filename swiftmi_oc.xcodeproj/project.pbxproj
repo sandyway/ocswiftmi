@@ -83,6 +83,90 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		16E14E6F1B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1DC7B7C01A8FFF5300B14C5C62878A29;
+			remoteInfo = AFNetworking;
+		};
+		16E14E711B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13B5089F889E5910697109A1353DF2E8;
+			remoteInfo = BlocksKit;
+		};
+		16E14E731B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C7FA26675C4CADC1DBA5AA357B32069;
+			remoteInfo = FXKeychain;
+		};
+		16E14E751B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ACA096F8BF0E738E96AD27E2869D0004;
+			remoteInfo = FrameAccessor;
+		};
+		16E14E771B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 60B0DDC267AE0BC8068018C7C26D2F95;
+			remoteInfo = MBProgressHUD;
+		};
+		16E14E791B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 082B8FC20DC52B48B9DA429410D6A5B1;
+			remoteInfo = MJRefresh;
+		};
+		16E14E7B1B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FC60DC6CB7AD2783737FC643B98754AA;
+			remoteInfo = MWFeedParser;
+		};
+		16E14E7D1B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AAF0879E9DF7182F06D60B7D9B71D2D9;
+			remoteInfo = "NSString-Hashes";
+		};
+		16E14E7F1B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D153A38C8E13D3948A0A481FC29A49B;
+			remoteInfo = NYXImagesKit;
+		};
+		16E14E811B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 47215689FA528A14DCD60B2C402D03C0;
+			remoteInfo = Pods;
+		};
+		16E14E831B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 35C69A7BF42DE3E072C96DD79D97B478;
+			remoteInfo = RegexKitLite;
+		};
+		16E14E851B79E78B00C48356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A4E3C75131DB73B535BA7338F6201845;
+			remoteInfo = SDWebImage;
+		};
 		16E450CF1B6592BD00EC2EBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 16E450AA1B6592BD00EC2EBB /* Project object */;
@@ -174,6 +258,7 @@
 		16E14E2D1B79CF2300C48356 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = swiftmi_oc/libraries/extends/WeChatSDK/libWeChatSDK.a; sourceTree = "<group>"; };
 		16E14E2F1B79CF3A00C48356 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = swiftmi_oc/libraries/extends/SinaWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
 		16E14E311B79D1A600C48356 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		16E14E601B79E78A00C48356 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		16E3CD091B75B88F0037EE85 /* article.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = article.html; sourceTree = "<group>"; };
 		16E3CD0A1B75B88F0037EE85 /* article.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = article.js; sourceTree = "<group>"; };
 		16E3CD0B1B75B88F0037EE85 /* bootstrap.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bootstrap.min.css; sourceTree = "<group>"; };
@@ -414,6 +499,25 @@
 			path = WeChatSDK;
 			sourceTree = "<group>";
 		};
+		16E14E611B79E78A00C48356 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16E14E701B79E78B00C48356 /* libAFNetworking.a */,
+				16E14E721B79E78B00C48356 /* libBlocksKit.a */,
+				16E14E741B79E78B00C48356 /* libFXKeychain.a */,
+				16E14E761B79E78B00C48356 /* libFrameAccessor.a */,
+				16E14E781B79E78B00C48356 /* libMBProgressHUD.a */,
+				16E14E7A1B79E78B00C48356 /* libMJRefresh.a */,
+				16E14E7C1B79E78B00C48356 /* libMWFeedParser.a */,
+				16E14E7E1B79E78B00C48356 /* libNSString-Hashes.a */,
+				16E14E801B79E78B00C48356 /* libNYXImagesKit.a */,
+				16E14E821B79E78B00C48356 /* libPods.a */,
+				16E14E841B79E78B00C48356 /* libRegexKitLite.a */,
+				16E14E861B79E78B00C48356 /* libSDWebImage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		16E3CD081B75B88F0037EE85 /* htmlPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +542,7 @@
 		16E450A91B6592BD00EC2EBB = {
 			isa = PBXGroup;
 			children = (
+				16E14E601B79E78A00C48356 /* Pods.xcodeproj */,
 				16E450E31B659DBA00EC2EBB /* CoreData.framework */,
 				16E450B41B6592BD00EC2EBB /* swiftmi_oc */,
 				16E450D11B6592BD00EC2EBB /* swiftmi_ocTests */,
@@ -645,6 +750,12 @@
 			mainGroup = 16E450A91B6592BD00EC2EBB;
 			productRefGroup = 16E450B31B6592BD00EC2EBB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 16E14E611B79E78A00C48356 /* Products */;
+					ProjectRef = 16E14E601B79E78A00C48356 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				16E450B11B6592BD00EC2EBB /* swiftmi_oc */,
@@ -652,6 +763,93 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		16E14E701B79E78B00C48356 /* libAFNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAFNetworking.a;
+			remoteRef = 16E14E6F1B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E721B79E78B00C48356 /* libBlocksKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBlocksKit.a;
+			remoteRef = 16E14E711B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E741B79E78B00C48356 /* libFXKeychain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFXKeychain.a;
+			remoteRef = 16E14E731B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E761B79E78B00C48356 /* libFrameAccessor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFrameAccessor.a;
+			remoteRef = 16E14E751B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E781B79E78B00C48356 /* libMBProgressHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMBProgressHUD.a;
+			remoteRef = 16E14E771B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E7A1B79E78B00C48356 /* libMJRefresh.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMJRefresh.a;
+			remoteRef = 16E14E791B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E7C1B79E78B00C48356 /* libMWFeedParser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMWFeedParser.a;
+			remoteRef = 16E14E7B1B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E7E1B79E78B00C48356 /* libNSString-Hashes.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libNSString-Hashes.a";
+			remoteRef = 16E14E7D1B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E801B79E78B00C48356 /* libNYXImagesKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNYXImagesKit.a;
+			remoteRef = 16E14E7F1B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E821B79E78B00C48356 /* libPods.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPods.a;
+			remoteRef = 16E14E811B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E841B79E78B00C48356 /* libRegexKitLite.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRegexKitLite.a;
+			remoteRef = 16E14E831B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16E14E861B79E78B00C48356 /* libSDWebImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImage.a;
+			remoteRef = 16E14E851B79E78B00C48356 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		16E450B01B6592BD00EC2EBB /* Resources */ = {
