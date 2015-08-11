@@ -113,7 +113,7 @@
         <scene sceneID="PC3-XM-0bU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nHO-JI-fdK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="社区" image="home" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="社区" image="home" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NTe-Q3-A2X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -14,4 +14,5 @@
 +(id) GetViewController:(NSString*)controllerName;
 +(NSString*)rawString:(id)object encoding:(int)encoding opt:(NSJSONWritingOptions)opt;
 +(void)share:(NSString*)title desc:(NSString*)desc imgUrl:(NSString*)imgUrl linkUrl:(NSString*)linkUrl;
++(void)delayCallback: (void(^)(void))callback forTotalSeconds: (double)delayInSeconds;
 @end
