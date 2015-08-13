@@ -90,4 +90,13 @@
     
 }
 
++(void)showMessage:(NSString*)msg{
+    [self showMessageWithTitle:msg title:@"提醒"];
+}
+
++(void)showMessageWithTitle:(NSString *)msg title:(NSString*)title{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    [alert show];
+}
+
 @end

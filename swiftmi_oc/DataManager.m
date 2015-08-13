@@ -190,4 +190,12 @@
     return [self requestWithMethod:RequestMethodHTTPPOST URLString:url parameters:parameters success:success failure:failure];
 }
 
+- (NSURLSessionDataTask *)UserRegister:(NSDictionary*)parameters
+                               success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                               failure:(void (^)(NSError *error))failure{
+    NSString* url = @"/api/user/reg";
+    return [self requestWithMethod:RequestMethodHTTPPOST URLString:url parameters:parameters success:success failure:failure];
+}
+
+
 @end

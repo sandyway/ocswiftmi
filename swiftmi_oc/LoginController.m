@@ -10,6 +10,7 @@
 #import "AppNotice.h"
 #import "FXKeychain.h"
 #import "UserDal.h"
+#import "RegisterController.h"
 
 @interface LoginController ()
 @property (nonatomic, strong)UIActivityIndicatorView* loadingView;
@@ -103,8 +104,8 @@
 
 
 - (IBAction)regAction:(id)sender {
-//    RegisterController* toViewController = (RegisterController*)[Utility GetViewController:@"registerController"];
-//    [self.navigationController pushViewController:toViewController animated:TRUE];
+    RegisterController* toViewController = (RegisterController*)[Utility GetViewController:@"registerController"];
+    [self.navigationController pushViewController:toViewController animated:TRUE];
 }
 
 /*
