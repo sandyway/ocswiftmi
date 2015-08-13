@@ -44,7 +44,7 @@
     if (_theNewShareCode != nil) {
         return self.theNewShareCode;
     }
-    NSDictionary* dic = @{@"comments":@{}};
+    NSMutableDictionary* dic = [@{@"comments":@{}} mutableCopy];
     [dic setValue:self.shareCode forKey:@"code"];
     return dic;
 }

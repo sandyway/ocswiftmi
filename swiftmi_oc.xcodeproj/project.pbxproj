@@ -32,6 +32,7 @@
 		01D5083C1B665C1B00A48E7D /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5083B1B665C1B00A48E7D /* CoreDataManager.m */; };
 		01D5083F1B665DF700A48E7D /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5083E1B665DF700A48E7D /* Constant.m */; };
 		161A7D851B75F0C000D9788A /* pagedown in Resources */ = {isa = PBXBuildFile; fileRef = 161A7D841B75F0C000D9788A /* pagedown */; };
+		16DED6941B7ABBF1009EDC49 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DED6931B7ABBF1009EDC49 /* RegisterController.m */; };
 		16E02C781B76401B00592F40 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E02C771B76401B00592F40 /* WebViewController.m */; };
 		16E14E0E1B79AC3C00C48356 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E14DF51B79AC3C00C48356 /* TencentOpenAPI.framework */; };
 		16E14E0F1B79AC3C00C48356 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16E14DF61B79AC3C00C48356 /* TencentOpenApi_IOS_Bundle.bundle */; };
@@ -228,6 +229,8 @@
 		01D5083D1B665DF700A48E7D /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		01D5083E1B665DF700A48E7D /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 		161A7D841B75F0C000D9788A /* pagedown */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pagedown; sourceTree = "<group>"; };
+		16DED6921B7ABBF1009EDC49 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		16DED6931B7ABBF1009EDC49 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		16E02C761B76401B00592F40 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		16E02C771B76401B00592F40 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		16E14DF51B79AC3C00C48356 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
@@ -635,6 +638,8 @@
 				16E3EF051B7728B60036A127 /* BookViewController.m */,
 				01CC876C1B78283900593199 /* MyController.h */,
 				01CC876D1B78283900593199 /* MyController.m */,
+				16DED6921B7ABBF1009EDC49 /* RegisterController.h */,
+				16DED6931B7ABBF1009EDC49 /* RegisterController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -943,6 +948,7 @@
 				01D5083C1B665C1B00A48E7D /* CoreDataManager.m in Sources */,
 				015861C41B70A18400445DF9 /* UIImage+Tint.m in Sources */,
 				16E450BE1B6592BD00EC2EBB /* FirstViewController.m in Sources */,
+				16DED6941B7ABBF1009EDC49 /* RegisterController.m in Sources */,
 				01CE25D11B74597100048364 /* CodeController.m in Sources */,
 				01D4D8721B73752E00CFF883 /* UserDal.m in Sources */,
 				16E450E11B65980E00EC2EBB /* PostTableViewController.m in Sources */,

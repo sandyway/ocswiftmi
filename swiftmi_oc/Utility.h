@@ -15,4 +15,6 @@
 +(NSString*)rawString:(id)object encoding:(int)encoding opt:(NSJSONWritingOptions)opt;
 +(void)share:(NSString*)title desc:(NSString*)desc imgUrl:(NSString*)imgUrl linkUrl:(NSString*)linkUrl;
 +(void)delayCallback: (void(^)(void))callback forTotalSeconds: (double)delayInSeconds;
++(void)showMessage:(NSString*)msg;
++(void)showMessageWithTitle:(NSString *)msg title:(NSString*)title;
 @end

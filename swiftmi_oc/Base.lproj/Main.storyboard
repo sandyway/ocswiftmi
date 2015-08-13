@@ -573,6 +573,75 @@
             </objects>
             <point key="canvasLocation" x="2273" y="360"/>
         </scene>
+        <!--Register Controller-->
+        <scene sceneID="JJG-Np-8st">
+            <objects>
+                <viewController storyboardIdentifier="registerController" id="hcf-RB-w66" userLabel="Register Controller" customClass="RegisterController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KtS-Ih-Oc9"/>
+                        <viewControllerLayoutGuide type="bottom" id="M7o-KA-4j5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nt5-3K-5xQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJu-aZ-xGm" userLabel="用户名">
+                                <rect key="frame" x="36" y="40" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aOW-I0-fb3">
+                                <rect key="frame" x="36" y="78" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YPC-pv-KhK">
+                                <rect key="frame" x="36" y="116" width="528" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK0-2X-0eP">
+                                <rect key="frame" x="36" y="166" width="528" height="40"/>
+                                <color key="backgroundColor" red="0.35294117647058826" green="0.6705882352941176" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KY5-5S-Ml1"/>
+                                </constraints>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="regClick:" destination="hcf-RB-w66" eventType="touchUpInside" id="W3e-OV-Ooa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dJu-aZ-xGm" firstAttribute="leading" secondItem="nt5-3K-5xQ" secondAttribute="leadingMargin" constant="20" id="0II-ZF-fKJ"/>
+                            <constraint firstItem="fK0-2X-0eP" firstAttribute="leading" secondItem="nt5-3K-5xQ" secondAttribute="leadingMargin" constant="20" id="3hs-WO-Wq7"/>
+                            <constraint firstItem="YPC-pv-KhK" firstAttribute="leading" secondItem="nt5-3K-5xQ" secondAttribute="leadingMargin" constant="20" id="6wh-NV-ctm"/>
+                            <constraint firstItem="aOW-I0-fb3" firstAttribute="top" secondItem="dJu-aZ-xGm" secondAttribute="bottom" constant="8" id="HZc-GN-tbn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fK0-2X-0eP" secondAttribute="trailing" constant="20" id="Ov7-4s-911"/>
+                            <constraint firstItem="YPC-pv-KhK" firstAttribute="top" secondItem="aOW-I0-fb3" secondAttribute="bottom" constant="8" id="U0v-rx-lCb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dJu-aZ-xGm" secondAttribute="trailing" constant="20" id="UuD-Lz-eB2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aOW-I0-fb3" secondAttribute="trailing" constant="20" id="i38-Au-hCQ"/>
+                            <constraint firstItem="dJu-aZ-xGm" firstAttribute="top" secondItem="KtS-Ih-Oc9" secondAttribute="bottom" constant="20" id="kH7-TS-O7H"/>
+                            <constraint firstItem="fK0-2X-0eP" firstAttribute="top" secondItem="YPC-pv-KhK" secondAttribute="bottom" constant="20" id="om8-fM-w8X"/>
+                            <constraint firstItem="aOW-I0-fb3" firstAttribute="leading" secondItem="nt5-3K-5xQ" secondAttribute="leadingMargin" constant="20" id="qYa-E5-Cng"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YPC-pv-KhK" secondAttribute="trailing" constant="20" id="xa9-MH-QNi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnReg" destination="fK0-2X-0eP" id="1I3-Aj-hdB"/>
+                        <outlet property="email" destination="YPC-pv-KhK" id="593-Y7-u58"/>
+                        <outlet property="password" destination="aOW-I0-fb3" id="1ZU-dB-bwb"/>
+                        <outlet property="username" destination="dJu-aZ-xGm" id="7mh-yo-7sm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="11i-vu-wwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2924" y="820"/>
+        </scene>
         <!--Web View Controller-->
         <scene sceneID="mrT-MT-FAu">
             <objects>

@@ -47,5 +47,9 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
 - (NSURLSessionDataTask *)TopicComment:(NSDictionary*)parameters
                               success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                               failure:(void (^)(NSError *error))failure;
+- (NSURLSessionDataTask *)UserRegister:(NSDictionary*)parameters
+                               success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                               failure:(void (^)(NSError *error))failure;
+
 
 @end
