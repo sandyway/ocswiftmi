@@ -268,7 +268,7 @@
         id vc = [segue destinationViewController];
         if ([vc isKindOfClass:[PostDetailController class]]) {
             PostDetailController* view = (PostDetailController*)vc;
-            view.hidesBottomBarWhenPushed = YES;
+//            view.hidesBottomBarWhenPushed = YES;
             NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
             
             id article = self.data[indexPath.row];

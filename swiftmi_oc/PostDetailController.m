@@ -128,11 +128,12 @@
             NSURL* url = [NSURL fileURLWithPath:path];
             NSURLRequest* request = [NSURLRequest requestWithURL:url];
             dispatch_async(dispatch_get_main_queue(), ^{
-                [Utility delayCallback:^{
-                    @strongify(self);
-                    //code to be executed on the main queue after delay
-                    self.inputWrapView.hidden = FALSE;
-                } forTotalSeconds:0.5];
+//                [Utility delayCallback:^{
+//                    @strongify(self);
+//                    //code to be executed on the main queue after delay
+//                    self.inputWrapView.hidden = FALSE;
+//                } forTotalSeconds:0.5];
+                self.inputWrapView.hidden = FALSE;
                 [self.webView loadRequest:request];
             });
         }

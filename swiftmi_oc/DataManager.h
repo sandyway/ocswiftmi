@@ -51,5 +51,7 @@ typedef NS_ENUM(NSInteger, RequestMethod) {
                                success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                                failure:(void (^)(NSError *error))failure;
 
+- (NSURLSessionDataTask *)requestHttpsWithMethod:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                                         failure:(void (^)(NSError *error))failure ;
 
 @end
