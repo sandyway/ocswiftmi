@@ -90,8 +90,8 @@
     if (self.token != nil) {
         [self.manager.requestSerializer setValue:self.token forHTTPHeaderField:@"token"];
     }
-    [self.manager.requestSerializer setValue:@"com.swiftmi.demo" forHTTPHeaderField:@"clientid"];
-    [self.manager.requestSerializer setValue:@"1.0" forHTTPHeaderField:@"appversion"];
+//    [self.manager.requestSerializer setValue:@"com.swiftmi.demo" forHTTPHeaderField:@"clientid"];
+//    [self.manager.requestSerializer setValue:@"1.0" forHTTPHeaderField:@"appversion"];
     
     if (method == RequestMethodJSONGET) {
         AFHTTPResponseSerializer *responseSerializer = [AFJSONResponseSerializer serializer];
