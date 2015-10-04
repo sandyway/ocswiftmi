@@ -17,7 +17,7 @@
 /**
  *  链接微信API已供ShareSDK可以正常使用微信的相关功能（授权、分享）
  *
- *  @param weChatClass 微信SDK中的类型，应先倒入libWXApi.a，再传入[WXApi class]到此参数。注：此参数不能为nil，否则会导致授权、分享无法正常使用
+ *  @param weChatClass 微信SDK中的类型，应先导入libWXApi.a，再传入[WXApi class]到此参数。注：此参数不能为nil，否则会导致授权、分享无法正常使用
  */
 + (void)connectWeChat:(Class)wxApiClass;
 
@@ -35,5 +35,20 @@
  *  @param tencentOAuthClass   QQSDK中的类型，应先导入TencentOpenAPI.framework，再传入[TencentOAuth class]到此参数。
  */
 + (void)connectQQ:(Class)qqApiInterfaceClass tencentOAuthClass:(Class)tencentOAuthClass;
+
+/**
+ *  连接人人网SDK以供ShareSDK可以正常使用人人网客户端进行SSO授权。
+ *
+ *  @param rennClientClass 人人网SDK中的类型，应先导入RennSDK.framework,再传入[RennClient class]到此参数。
+ */
++ (void)connectRenren:(Class)rennClientClass;
+
+/**
+ *  连接Google＋以供ShareSDK可以正常使用Google＋的相关功能（包括授权、分享）
+ *
+ *  @param signClass  Google＋SDK中的类型,应先导入GooglePlus.framework,再传入[GPPSignIn class]到此参数
+ *  @param shareClass Google＋SDK中的类型,应先导入GooglePlus.framework,再传入[GPPShare class]到此参数
+ */
++ (void)connectGooglePlus:(Class)signClass shareClass:(Class)shareClass;
 
 @end

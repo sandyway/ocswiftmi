@@ -22,9 +22,9 @@
 #import "DataManager.h"
 #import "SettingManager.h"
 #import <FrameAccessor.h>
-//    #import <ReactiveCocoa.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "Constant.h"
-#import "EXTScope.h"
+//#import "EXTScope.h"
 #import "NSDictionary+NotNullKey.h"
 #import "AppNotice.h"
 #import "Utility.h"
