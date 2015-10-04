@@ -162,6 +162,10 @@
             border-bottom: 1px dashed #CCC;
             padding: 12px 0;
         }
+        .savatar {
+            width: 48px;
+            height: 48px;
+        }
             </style>
     </head>
     <body class="body fnormal">
@@ -203,7 +207,7 @@
                                <dd id="<%=comment.commentId%>">
                                <span class="label label-default pull-right">#<%=(i+1)%></span>
                                
-                               <a href="http://www.swiftmi.com/member/<%=comment.username %>" class="pull-left" style="margin-right: 10px;"><img class="img-rounded" src="<%=comment.avatar %>-a48" alt="<%=comment.username %>"></a>
+                               <a href="http://www.swiftmi.com/member/<%=comment.username %>" class="pull-left" style="margin-right: 10px;"><img class="img-rounded savatar" src="<%=comment.avatar %>-a48" alt="<%=comment.username %>"></a>
                                <div class="info">
                                <a href="http://www.swiftmi.com/member/<%=comment.username %>"><strong><%=comment.username %></strong></a> •
                                <%=moment(comment.commentTime*1000).fromNow() %>
@@ -231,7 +235,7 @@
                 <dd id="<%=comment.commentId%>">
                     <span class="label label-default pull-right">#<%=comment.index+1%></span>
 
-                    <a href="http://www.swiftmi.com/member/<%=comment.username %>" class="pull-left" style="margin-right: 10px;"><img class="img-rounded" src="<%=comment.avatar %>-a48" alt="<%=comment.username %>"></a>
+                    <a href="http://www.swiftmi.com/member/<%=comment.username %>" class="pull-left" style="margin-right: 10px;"><img class="img-rounded savatar" src="<%=comment.avatar %>-a48" alt="<%=comment.username %>"></a>
                     <div class="info">
                         <a href="http://www.swiftmi.com/member/<%=comment.username %>"><strong><%=comment.username %></strong></a> •
                         <%=comment.fromNow  %>

@@ -34,3 +34,5 @@ swiftmi_oc.xcodeproj/project.xcworkspace/xcuserdata/swing.xcuserdatad/UserInterf
 *.xcbkptlist
 
 *.xcbkptlist
+
+*.xccheckout
