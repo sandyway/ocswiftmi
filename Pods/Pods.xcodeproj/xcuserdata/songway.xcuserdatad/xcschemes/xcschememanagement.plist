@@ -2,19 +2,122 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AFNetworking-RACExtensions.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>BlocksKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FXKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FrameAccessor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MWFeedParser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Mantle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NSString-Hashes.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NYXImagesKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveViewModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RegexKitLite.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03E8944944BD51854D59B05DF8C01334</key>
+		<key>0902F7CACC04B334787D0AB787133EA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0E04C9F5CBD0C3E2296AD784C49E0E92</key>
+		<key>09A8248B6017C8084241AD9F5C9B3100</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1F159DAD8FB36EECCFCD619372373E8D</key>
+		<key>1163531701E7990F8F8161FD9B7429E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>12A8644CE081706582716648A3C4E1DF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F576B7FAE226B7B226C580BD5D61BBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2AAA698573BBE86C20245C4FF964E48B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3E301FAD1B18B5E3CD64BC43E4966459</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -24,42 +127,42 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70A01A32F5FEC0376DCDC4154B6DF0AE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>745CBAD6F84CE45AA4E4F1F7E6A15748</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>8B7E35EFC2EB105F5BC6BA58F9DE3E82</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9205FB49BE6594FA4E5ACAE53BD84B78</key>
+		<key>8D13752C1F0CC2C2F0C52E692C93EB08</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA624071524EEC057BB78B64D63FBE67</key>
+		<key>91C6C0C402246080DABDCB54101DD480</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D56D844CE18C91E4840852FFCD926B10</key>
+		<key>AAD3B9A0D686FA9E5C1A6D217A134FD2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB9279E783DEC5299D1CC92EE099145B</key>
+		<key>ABF667F533B0490F0457488AD47DC00A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E277606C21FC1889400D302411C86D88</key>
+		<key>CC3BF5C1E92B74C42C09B2A6AD839945</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDA51FC80B33AC42D155D4A52D79A2EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D51728E6C0B00168F4C71E65A0773B4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
